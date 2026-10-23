@@ -44,3 +44,11 @@ The page is new and empty (0 followers, no posts or reviews). Items 1–4 below 
 1. **Headline price:** "from £999" (per-area list) or "from £1,450, usually from £2,000" (campaign)?
 2. **"Was" prices:** is there evidence they were charged? If not, they should come off the main site too.
 3. **Main site:** it still says "Non-Surgical Facelift", shows a £50 deposit, names Klarna/Clearpay/Ideal 4 Finance and lists 10 Harley Street, all of which conflict with the playbook.
+
+## E. Raised by the public-register check (important)
+1. **HIS conditions (Glasgow):** the registration says "non-surgical treatments only" plus listed minor procedures. Does it cover a laser fibre inserted under the skin under local anaesthetic? Please check with HIS before offering or advertising Endomax Lift in Glasgow.
+2. **CQC (London):** no registration found. Doctor-led procedures in England usually need CQC registration (or a registered host provider). Who is the registered provider at 2 Grosvenor Gardens?
+3. **Titles:** Mr Al-Nakib isn't on the GMC Specialist Register, so "Consultant Plastic Surgeon" (used on both brand sites) may be misleading. Please confirm titles and qualifications (FRCSEd) for everyone listed.
+4. **GMC numbers** for Dr Soltanzadeh, Dr Ku, Dr Khan and Dr Mohammed.
+5. **Legal entity:** is "Harley Street Aesthetics" a trading name of Harley Street Medics Ltd (SC818003)? Also the ICO registration number.
+6. **Addresses:** the HSM privacy policy lists Portpool Lane EC1N and 154 Clyde Street. Are these old addresses?

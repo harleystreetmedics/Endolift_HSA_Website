@@ -4,18 +4,19 @@ Work through this before launch. Tick items as you go. Run `npm run check:tbc` t
 
 ## 1. Blockers: information still needed (every [TBC] item)
 
-The site shows each of these as an **amber highlighted** `[TBC: …]` on the page. There are 30 unique placeholders. The Copilot playbook (read 23 Oct) answered the rest; these are the items it didn't document.
+The site shows each of these as an **amber highlighted** `[TBC: …]` on the page. There are 30 unique placeholders, left after checking Copilot, the three brand websites and the public registers (GMC, HIS, CQC, Companies House). See research.md §9 and open-questions.md §E.
 
 - [ ] `[TBC: booking, deposit and cancellation terms (not documented in the Copilot playbook)]`
 - [ ] `[TBC: campaign headline “from £1,450, usually from £2,000” conflicts with the £999 per-area price. Confirm which to use]`
-- [ ] `[TBC: clinic(s)]`
 - [ ] `[TBC: clinical sign-off of full contraindications list]`
 - [ ] `[TBC: complaints procedure and escalation route]`
+- [ ] `[TBC: confirm FRCSEd]`
 - [ ] `[TBC: confirm HSA social profiles from Facebook Business Suite]`
+- [ ] `[TBC: confirm legal entity, e.g. Harley Street Medics Ltd (SC818003), 211b Main Street, Bellshill ML4 1AJ]`
 - [ ] `[TBC: confirm which practitioners perform this treatment at each clinic]`
 - [ ] `[TBC: consented before-and-after photos with treatment details]`
 - [ ] `[TBC: consented before/after photo: area, sessions, time since treatment, practitioner]`
-- [ ] `[TBC: CQC registration status and provider ID]`
+- [ ] `[TBC: CQC registration. None found on the CQC register for this brand/address]`
 - [ ] `[TBC: CRM provider]`
 - [ ] `[TBC: date]`
 - [ ] `[TBC: enquiry destination from Copilot]`
@@ -24,14 +25,13 @@ The site shows each of these as an **amber highlighted** `[TBC: …]` on the pag
 - [ ] `[TBC: GMC number]`
 - [ ] `[TBC: Google rating]`
 - [ ] `[TBC: Google reviews link]`
-- [ ] `[TBC: Healthcare Improvement Scotland registration status]`
 - [ ] `[TBC: ICO number]`
+- [ ] `[TBC: job title. GMC number and specialist registration not yet verified]`
+- [ ] `[TBC: job title. GMC register shows no Specialist Register entry]`
 - [ ] `[TBC: legal review]`
-- [ ] `[TBC: London opening hours]`
 - [ ] `[TBC: number of reviews]`
 - [ ] `[TBC: package details]`
 - [ ] `[TBC: qualifications]`
-- [ ] `[TBC: registered company name, company number and registered office]`
 - [ ] `[TBC: retention periods for enquiries that do and do not become patients]`
 - [ ] `[TBC: reviewer first name + initial]`
 - [ ] `[TBC: standalone submental price]`
@@ -42,6 +42,11 @@ Also not shown as a placeholder, but missing:
 - [ ] Practitioner photos: self-host approved photos in `public/images/team/` (currently hot-linked from the main site CDN, with an initials fallback).
 - [ ] Tracking IDs (GA4 / GTM / Meta Pixel) → Netlify env vars. If you use GTM, set up Consent Mode so tags inside GTM respect the marketing choice.
 - [ ] Final subdomain (`NEXT_PUBLIC_SITE_URL`).
+
+## 2a. Regulatory points to resolve first
+- [ ] HIS conditions for Glasgow ("non-surgical treatments only") cover Endomax Lift.
+- [ ] CQC registration (or registered host provider) for London.
+- [ ] Practitioner titles: "Consultant" only where on the GMC Specialist Register.
 
 ## 2. Decisions to confirm (see docs/decisions.md)
 - [ ] **Treatment name.** Copilot confirms "Endomax Lift" and documents no Eufoton device, so stay with it unless proof arrives. To switch to "Endolift®", Flip `USE_ENDOLIFT_TRADEMARK` in `src/content/site.ts`. Also update `scripts/make-og.mjs` (the OG image text) and re-run `npm run make:og`.

@@ -24,3 +24,7 @@
 | D20 | Neck page now targets "laser neck tightening" and the face page "laser face and cheek tightening", instead of "non-surgical neck lift / facelift" | Banned-wording rule. Keep these terms out of ads as well. |
 | D21 | Kept "Endomax Lift" (no Endolift®) | Copilot confirms no Eufoton device is documented. |
 | D22 | The per-area £999 starting price is shown. The "from £1,450" campaign headline is flagged, not used | The two conflict, and the per-area list is the documented price list. |
+| D23 | Showed Mr Al-Nakib's GMC number (3632451, verified on the GMC register) but removed "Consultant Plastic Surgeon" and FRCSEd pending confirmation. Dr Soltanzadeh's "Consultant" title is also flagged | "Consultant" normally implies Specialist Register entry. The register shows none, so using it could mislead (ASA / GMC Good Medical Practice). |
+| D24 | Glasgow footer states HIS registration (Harley Street Medics Ltd). London stays [TBC] for CQC | HIS is publicly verified. CQC isn't. |
+| D25 | London hours taken from harleystreetmedics.clinic (same address) | Only published source. |
+| D26 | Privacy policy names Harley Street Medics Ltd (SC818003) as the likely data controller, flagged [TBC] | It's the HIS-registered provider, but its link to the "Harley Street Aesthetics" brand isn't stated anywhere. |

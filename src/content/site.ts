@@ -66,8 +66,9 @@ export const CLINICS: Record<ClinicId, Clinic> = {
     ],
     phone: { display: "020 4628 3165", href: "tel:+442046283165", e164: "+442046283165" },
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=2+Grosvenor+Gardens+London+SW1W+0DH",
-    hours: "[TBC: London opening hours]",
-    regulator: "[TBC: CQC registration status and provider ID]",
+    // From harleystreetmedics.clinic (same address). Not listed on harleystreetaesthetic.co.uk.
+    hours: "Tuesday to Friday 9am–7pm, Saturday 9am–6pm",
+    regulator: "[TBC: CQC registration. None found on the CQC register for this brand/address]",
   },
   glasgow: {
     id: "glasgow",
@@ -79,7 +80,8 @@ export const CLINICS: Record<ClinicId, Clinic> = {
     phone: { display: "0141 488 8985", href: "tel:+441414888985", e164: "+441414888985" },
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Ingram+House+227+Ingram+Street+Glasgow+G1+1DA",
     hours: "[TBC: Glasgow opening hours]",
-    regulator: "[TBC: Healthcare Improvement Scotland registration status]",
+    // HIS register (healthcareimprovementscotland.scot/?p=20061): Harley Street Medics Ltd, independent clinic.
+    regulator: "Registered with Healthcare Improvement Scotland as an independent clinic (Harley Street Medics Ltd)",
   },
 };
 

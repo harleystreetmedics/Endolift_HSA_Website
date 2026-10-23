@@ -22,25 +22,27 @@ export const PRACTITIONERS: Practitioner[] = [
     bio: "Dr Ku has trained and worked across the UK, France and Europe. Clinical interests include laser and energy-based treatments, laser lifting and injectables. Dr Ku speaks English, French and Russian.",
     photo: "https://harleystreetaesthetic.co.uk/images/team/dr-nina-ku.webp",
     gmc: "[TBC: GMC number]",
-    clinics: "[TBC: clinic(s)]",
+    clinics: "London",
   },
   {
     name: "Mr Khalil Al-Nakib",
-    title: "Consultant Plastic Surgeon",
-    qualifications: "FRCSEd",
-    bio: "A Fellow of the Royal College of Surgeons of Edinburgh with experience in plastic, aesthetic and reconstructive surgery. Skilled in the use of medical lasers and a member of the British Laser Association, Mr Al-Nakib also holds regular clinics in Glasgow.",
+    // GMC register shows full registration but no Specialist Register entry, so "Consultant" may not be usable.
+    title: "[TBC: job title. GMC register shows no Specialist Register entry]",
+    qualifications: "MB ChB (University of Mosul, 1971). [TBC: confirm FRCSEd]",
+    bio: "Mr Al-Nakib qualified in medicine in 1971 and has experience in plastic, aesthetic and reconstructive surgery and the use of medical lasers, and holds regular clinics in London and Glasgow.",
     photo: "https://harleystreetmedics.clinic/wp-content/uploads/2024/11/6-1.webp",
-    gmc: "[TBC: GMC number]",
+    // Verified at https://www.gmc-uk.org/registrants/3632451 on 23 Oct 2026.
+    gmc: "3632451",
     clinics: "London & Glasgow",
   },
   {
     name: "Dr Ayda Soltanzadeh",
-    title: "Consultant Dermatologist",
+    title: "[TBC: job title. GMC number and specialist registration not yet verified]",
     qualifications: "[TBC: qualifications]",
     bio: "Dr Soltanzadeh offers bespoke treatment plans, with a focus on thread lifts, facial contouring and non-surgical facial rejuvenation.",
     photo: "https://images-strategyguys.netlify.app/harleystreemedics-image-source-main/dr.%20ayda.webp",
     gmc: "[TBC: GMC number]",
-    clinics: "[TBC: clinic(s)]",
+    clinics: "London & Glasgow",
   },
 ];
 

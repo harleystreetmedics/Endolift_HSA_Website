@@ -94,7 +94,9 @@ export function PractitionerCard({ p }: { p: Practitioner }) {
       <FallbackImage src={p.photo} alt={`Portrait of ${p.name}`} fallback={initials} width={480} height={560} className="aspect-[6/7] w-full" />
       <div className="flex flex-1 flex-col p-6">
         <h3 className="font-serif text-2xl text-ink">{p.name}</h3>
-        <p className="mt-1 text-sm font-semibold text-gold-700">{p.title}</p>
+        <p className="mt-1 text-sm font-semibold text-gold-700">
+          <T>{p.title}</T>
+        </p>
         {p.qualifications && (
           <p className="mt-1 text-xs text-stone">
             <T>{p.qualifications}</T>

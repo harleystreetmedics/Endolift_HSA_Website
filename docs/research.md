@@ -159,3 +159,18 @@ The playbook list returned 404. The chat could reach one playbook, **"Endolift (
 
 ## 8. Keyword notes
 The target terms "endolift London", "endolift Glasgow", "laser jawline tightening", "non-surgical neck lift" and "double chin laser treatment" all fit the treatment content. Using "Endolift" as a brand term depends on the Eufoton device question (see `decisions.md` D2). Until that is confirmed, pages target the descriptive phrases plus "Endomax Lift".
+
+## 9. Brand websites and public registers (second pass, 23 Oct 2026)
+
+### From the three brand websites
+- **harleystreetaesthetic.co.uk:** no privacy, terms or cookie pages exist (footer links go to `#`). No company name or number, ICO number, CQC/HIS registration, opening hours or GMC numbers. Google badge "EXCELLENT" with no rating, count or link. Glasgow team page lists Mr Khalil Al-Nakib and Dr Ayda Soltanzadeh. London team lists Al-Nakib, Soltanzadeh, Dr Nina Ku, Dr Mazhar Khan and Dr Afraa Mohammed.
+- **harleystreetmedics.clinic:** London hours "Tuesday to Friday 09:00–19:00, Saturday 09:00–18:00" (used on this site for London). Phone 020 4536 6000 and WhatsApp 020 4572 3855 differ from HSA's. Pricing page: online consultation free, in-clinic consultation with a doctor £195. GTM-N5RRBZRR (HSM's container). **Its privacy policy gives different addresses** (London: 1-5 Portpool Lane EC1N 7UU; Glasgow: Glasgow Day Surgery Centre, 154 Clyde Street G1 4EX). Its "Book online" buttons link to `#`. It names no legal entity or ICO number.
+- **harleystreetmedicalwellness.co.uk:** location chooser only. No legal or contact details.
+
+### Public registers
+- **Companies House:** HARLEY STREET MEDICS LTD, **SC818003**, active, incorporated 31 Jul 2024, registered office 211b Main Street, Bellshill ML4 1AJ, SIC 86220. Director Dr Mohammed Tauqir Ahmad. PSC: Signature Medics London Ltd. Related: Harley Street Medical & Wellness Ltd (SC867603) and Harley Street Wellness Ltd (SC865331). No "Harley Street Aesthetics" company found. The confirmation statement was due 16 Sep 2026 (filing status not checked).
+- **Healthcare Improvement Scotland:** "Harley Street Medics" is **registered as an independent clinic**. Provider Harley Street Medics Ltd. Service address Suite 5b Ingram House, 227 Ingram Street, G1 1DA. **Conditions include "non-surgical treatments only" (plus listed minor procedures), no sedation or GA, and over-18s only.** No registration number shown. https://www.healthcareimprovementscotland.scot/?p=20061
+- **CQC:** no registration found for these brands or for Harley Street Medics at 2 Grosvenor Gardens (the CQC search couldn't be automated, so not fully ruled out). Other CQC providers share the building.
+- **ICO:** no entry found (the register search can't be automated).
+- **GMC:** **Mr Khalil Al-Nakib, GMC 3632451**: registered with a licence to practise. MB ChB 1971 (Mosul). **Not on the Specialist Register or GP Register.** Designated body Signature Medics Limited. https://www.gmc-uk.org/registrants/3632451. No GMC numbers could be tied to Dr Soltanzadeh, Dr Ku, Dr Khan or Dr Mohammed (manual GMC search needed).
+- **Google rating:** no reliable source. A Consentz directory shows 4.4 from 67 reviews for an older Glasgow listing at 154 Clyde St (self-reported, undated). **Not used.**
