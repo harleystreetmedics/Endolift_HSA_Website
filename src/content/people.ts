@@ -49,37 +49,40 @@ export const PRACTITIONERS: Practitioner[] = [
 export interface Review {
   name: string;
   text: string;
-  source: string;
-  date: string;
+  treatment: string;
 }
 
 /**
- * Only add genuine reviews you have permission to quote (CAP Code section 3).
- * The live-site testimonials were not reused (D5).
+ * Reviews reused at the clinic's request from harleystreetaesthetic.co.uk ("Trusted by Patients",
+ * read 23 Oct 2026), verbatim. The source platform, dates and permission to quote are still to be
+ * confirmed (CAP Code section 3: testimonials must be genuine and held on file).
  */
 export const REVIEWS: Review[] = [
   {
-    name: "[TBC: reviewer first name + initial]",
-    text: "[TBC: verified patient review of this treatment, quoted with permission]",
-    source: "Google",
-    date: "[TBC: date]",
+    name: "James Peterson",
+    treatment: "Endomax Lift",
+    text: "Endolift results are insane. I honestly look 10 years younger. The team explained everything perfectly and made me feel so comfortable throughout the process.",
   },
   {
-    name: "[TBC: reviewer first name + initial]",
-    text: "[TBC: verified patient review of this treatment, quoted with permission]",
-    source: "Google",
-    date: "[TBC: date]",
+    name: "Olivia K.",
+    treatment: "Full Face Rejuvenation",
+    text: "Finally found a clinic that prioritizes safety and elegance. The consultation was thorough and honest. I wouldn't trust anyone else with my face.",
   },
   {
-    name: "[TBC: reviewer first name + initial]",
-    text: "[TBC: verified patient review of this treatment, quoted with permission]",
-    source: "Google",
-    date: "[TBC: date]",
+    name: "Sarah Jenkins",
+    treatment: "Dermal Fillers",
+    text: "The best clinic in London! My dermal filler results are so natural, nobody knows I've had anything done—they just tell me I look rested.",
+  },
+  {
+    name: "Sophia Liu",
+    treatment: "Virtue RF Microneedling",
+    text: "Professional, clean, and luxury service. The Glasgow clinic is stunning. Virtue RF changed my skin texture completely after just two sessions.",
+  },
+  {
+    name: "David Mitchell",
+    treatment: "PLACL Threads",
+    text: "I was nervous about thread lifts, but Dr. Vincent was incredible. The PLACL threads gave me an immediate lift without looking 'pulled'. Highly recommend.",
   },
 ];
 
-export const REVIEW_SUMMARY = {
-  rating: "[TBC: Google rating]",
-  count: "[TBC: number of reviews]",
-  url: "[TBC: Google reviews link]",
-};
+export const REVIEW_SOURCE_NOTE = "[TBC: review source (e.g. Google), dates and permission to quote]";

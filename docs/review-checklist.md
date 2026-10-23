@@ -4,7 +4,7 @@ Work through this before launch. Tick items as you go. Run `npm run check:tbc` t
 
 ## 1. Blockers: information still needed (every [TBC] item)
 
-The site shows each of these as an **amber highlighted** `[TBC: …]` on the page. There are 30 unique placeholders, left after checking Copilot, the three brand websites and the public registers (GMC, HIS, CQC, Companies House). See research.md §9 and open-questions.md §E.
+The site shows each of these as an **amber highlighted** `[TBC: …]` on the page. There are 25 unique placeholders, left after checking Copilot, the three brand websites and the public registers (GMC, HIS, CQC, Companies House). See research.md §9 and open-questions.md §E.
 
 - [ ] `[TBC: booking, deposit and cancellation terms (not documented in the Copilot playbook)]`
 - [ ] `[TBC: campaign headline “from £1,450, usually from £2,000” conflicts with the £999 per-area price. Confirm which to use]`
@@ -18,24 +18,19 @@ The site shows each of these as an **amber highlighted** `[TBC: …]` on the pag
 - [ ] `[TBC: consented before/after photo: area, sessions, time since treatment, practitioner]`
 - [ ] `[TBC: CQC registration. None found on the CQC register for this brand/address]`
 - [ ] `[TBC: CRM provider]`
-- [ ] `[TBC: date]`
 - [ ] `[TBC: enquiry destination from Copilot]`
 - [ ] `[TBC: finance provider and FCA status before naming any lender or plan]`
 - [ ] `[TBC: Glasgow opening hours]`
 - [ ] `[TBC: GMC number]`
-- [ ] `[TBC: Google rating]`
-- [ ] `[TBC: Google reviews link]`
 - [ ] `[TBC: ICO number]`
 - [ ] `[TBC: job title. GMC number and specialist registration not yet verified]`
 - [ ] `[TBC: job title. GMC register shows no Specialist Register entry]`
 - [ ] `[TBC: legal review]`
-- [ ] `[TBC: number of reviews]`
 - [ ] `[TBC: package details]`
 - [ ] `[TBC: qualifications]`
 - [ ] `[TBC: retention periods for enquiries that do and do not become patients]`
-- [ ] `[TBC: reviewer first name + initial]`
+- [ ] `[TBC: review source (e.g. Google), dates and permission to quote]`
 - [ ] `[TBC: standalone submental price]`
-- [ ] `[TBC: verified patient review of this treatment, quoted with permission]`
 
 Also not shown as a placeholder, but missing:
 - [ ] Official logo files (SVG/PNG, light and dark). The site uses a text wordmark until supplied (`src/components/Wordmark.tsx`).
@@ -67,7 +62,7 @@ Also not shown as a placeholder, but missing:
 - [ ] The "GMC-registered doctors" statement is accurate for everyone who performs the treatment at both clinics.
 - [ ] CQC (London) and Healthcare Improvement Scotland (Glasgow) registration added once confirmed.
 - [ ] Before/after photos only with written consent, unretouched, with area, sessions, time since treatment and practitioner.
-- [ ] Reviews only if genuine, attributable and current, with permission. The main site's testimonials were **not** reused.
+- [ ] Reviews: the five main-site reviews are now used verbatim (at your request). Confirm they are genuine, held on file, and quoted with permission. Consider removing "I honestly look 10 years younger" (an ASA risk) and the four non-Endomax reviews.
 - [ ] Finance: only "0% finance may be available, subject to status" is shown. Name a lender only once FCA status is confirmed.
 - [ ] Legal pages (privacy, cookies, terms, medical disclaimer) reviewed by your legal/DPO adviser. All four are drafts.
 
