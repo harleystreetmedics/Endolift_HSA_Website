@@ -20,7 +20,7 @@ export default function Page() {
       </p>
       <h2>Bookings and cancellations</h2>
       <p>
-        <T>[TBC: booking, deposit and cancellation terms (not documented in the Copilot playbook)]</T>
+        Your first consultation is free and online. To secure a clinic appointment we ask for a £50 deposit, which is fully redeemable against the cost of your treatment. If you decide not to go ahead after your consultation, the deposit is refundable provided you give us 48 hours&rsquo; notice.
       </p>
       <h2>Content</h2>
       <p>

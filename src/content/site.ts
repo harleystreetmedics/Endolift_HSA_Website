@@ -68,7 +68,9 @@ export const CLINICS: Record<ClinicId, Clinic> = {
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=2+Grosvenor+Gardens+London+SW1W+0DH",
     // From harleystreetmedics.clinic (same address). Not listed on harleystreetaesthetic.co.uk.
     hours: "Tuesday to Friday 9am–7pm, Saturday 9am–6pm",
-    regulator: "[TBC: CQC registration. None found on the CQC register for this brand/address]",
+    // CQC register (23 Oct 2026): no entry for Harley Street Medics/Aesthetics. 2 Grosvenor Gardens hosts
+    // Grosvenor Gardens Healthcare (1-18332772562) and Broad Smiles Ltd (1-18318363072). Confirm which, if either, covers us.
+    regulator: "[TBC: CQC registration. Not registered under our name; confirm which provider at 2 Grosvenor Gardens covers us]",
   },
   glasgow: {
     id: "glasgow",

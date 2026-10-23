@@ -140,9 +140,15 @@ export const CONSULTATION = {
     "Your first consultation takes place online with a member of our clinical team, so you can find out whether the treatment is likely to suit you before visiting the clinic.",
 };
 
-/** Copilot playbook: only this wording may be used. No providers, instalment amounts or terms. */
+/** Copilot playbook: no instalment amounts or representative examples. */
 export const FINANCE_TEXT = "0% finance may be available, subject to status.";
-export const FINANCE_SMALLPRINT = "[TBC: finance provider and FCA status before naming any lender or plan]";
+/**
+ * Broker details from ideal4finance.com/retail/apply/hsm and the payment partners from
+ * harleystreetaesthetic.co.uk/london/finance (23 Oct 2026). The clinic's own FCA status as a
+ * credit introducer is still to be confirmed (docs/open-questions.md).
+ */
+export const FINANCE_SMALLPRINT =
+  "Monthly finance is arranged through Ideal4Finance (Ideal Sales Solutions Ltd), a credit broker and not a lender, authorised and regulated by the Financial Conduct Authority (FRN 703401). Klarna and Clearpay are also accepted. Credit is subject to status and affordability.";
 export function getArea(slug: string) {
   return AREAS.find((a) => a.slug === slug);
 }

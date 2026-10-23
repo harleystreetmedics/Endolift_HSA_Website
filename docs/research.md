@@ -170,7 +170,22 @@ The target terms "endolift London", "endolift Glasgow", "laser jawline tightenin
 ### Public registers
 - **Companies House:** HARLEY STREET MEDICS LTD, **SC818003**, active, incorporated 31 Jul 2024, registered office 211b Main Street, Bellshill ML4 1AJ, SIC 86220. Director Dr Mohammed Tauqir Ahmad. PSC: Signature Medics London Ltd. Related: Harley Street Medical & Wellness Ltd (SC867603) and Harley Street Wellness Ltd (SC865331). No "Harley Street Aesthetics" company found. The confirmation statement was due 16 Sep 2026 (filing status not checked).
 - **Healthcare Improvement Scotland:** "Harley Street Medics" is **registered as an independent clinic**. Provider Harley Street Medics Ltd. Service address Suite 5b Ingram House, 227 Ingram Street, G1 1DA. **Conditions include "non-surgical treatments only" (plus listed minor procedures), no sedation or GA, and over-18s only.** No registration number shown. https://www.healthcareimprovementscotland.scot/?p=20061
-- **CQC:** no registration found for these brands or for Harley Street Medics at 2 Grosvenor Gardens (the CQC search couldn't be automated, so not fully ruled out). Other CQC providers share the building.
-- **ICO:** no entry found (the register search can't be automated).
+- **CQC (re-checked 23 Oct):** neither brand nor Harley Street Medics is registered. 2 Grosvenor Gardens hosts Grosvenor Gardens Healthcare (Independent Doctor, location 1-18332772562, Grosvenor Gardens Holdings Ltd, registered manager Dr Berrin Tezcan) and Broad Smiles Ltd (provider 1-18318363072, which includes surgical procedures). Nothing links either to the clinic.
+- **CQC (first check):** no registration found for these brands or for Harley Street Medics at 2 Grosvenor Gardens (the CQC search couldn't be automated, so not fully ruled out). Other CQC providers share the building.
+- **ICO (re-checked 23 Oct, in the clinic's own browser):** **HARLEY STREET MEDICS LTD, reference ZB819731**, registered 22 Nov 2024, expires 21 Nov 2026, Tier 2, at 211B Main Street, Bellshill ML4 1AJ. https://ico.org.uk/ESDWebPages/Entry/ZB819731
 - **GMC:** **Mr Khalil Al-Nakib, GMC 3632451**: registered with a licence to practise. MB ChB 1971 (Mosul). **Not on the Specialist Register or GP Register.** Designated body Signature Medics Limited. https://www.gmc-uk.org/registrants/3632451. No GMC numbers could be tied to Dr Soltanzadeh, Dr Ku, Dr Khan or Dr Mohammed (manual GMC search needed).
 - **Google rating:** no reliable source. A Consentz directory shows 4.4 from 67 reviews for an older Glasgow listing at 154 Clyde St (self-reported, undated). **Not used.**
+
+## 10. Second pass (23 Oct 2026, clinic's request)
+
+- **Copilot** (copilot-hsm.strategyguys.agency) is a patient follow-up tool: Dashboard, Chase list, Chat and Usage. Its chat answers only patient queries, so it couldn't answer the business questions.
+- **GMC search** returned no results for Nina Ku or Soltanzadeh (a maintenance notice is posted for 24 Oct). Retry manually.
+- **Finance:** harleystreetaesthetic.co.uk/london/finance lists Klarna (Pay in 3), Clearpay (Pay in 4) and Ideal4Finance (monthly loans, "interest-free finance available for up to 12 months"). The apply link ideal4finance.com/retail/apply/hsm is branded "HARLEY STREET MEDICS LTD". It shows Ideal Sales Solutions Ltd as a licensed credit broker, not a lender, FCA FRN 703401. **The clinic's own FCA permission or appointed-representative status as a credit introducer isn't stated anywhere.**
+- **Deposit and cancellation** (harleystreetaesthetic.co.uk/london/pricing): a £50 deposit that is "fully redeemable against your treatment cost", refundable "provided 48 hours notice is given". The same page says a consultation fee applies and is deducted from treatment; harleystreetmedics.clinic/pricing lists a free online consultation and a £195 in-clinic doctor consultation.
+- **Not found anywhere:**
+  - Glasgow hours
+  - company number (SC818003 isn't on any of the three sites)
+  - complaints procedure
+  - data-retention periods
+  - GMC numbers for Dr Ku and Dr Soltanzadeh
+- The HSA footer privacy and terms links are "#" placeholders. HSM has no terms page.

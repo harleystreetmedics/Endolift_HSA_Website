@@ -11,8 +11,8 @@ export default function Page() {
     <LegalPage title="Privacy policy" path="/privacy-policy/">
       <h2>Who we are</h2>
       <p>
-        This website is operated by Harley Street Aesthetics, a trading name of <T>[TBC: confirm legal entity, e.g. Harley Street Medics Ltd (SC818003), 211b Main Street, Bellshill ML4 1AJ]</T>, the data controller
-        for personal data collected through it. ICO registration number: <T>[TBC: ICO number]</T>.
+        This website is operated by Harley Street Aesthetics, a trading name of Harley Street Medics Ltd, 211B Main Street, Bellshill, Lanarkshire ML4 1AJ (company number <T>[TBC: company number]</T>), the data controller
+        for personal data collected through it. ICO registration number: ZB819731.
       </p>
       <p>
         Contact us about privacy at <a href={`mailto:${BRAND.email}`}>{BRAND.email}</a>.

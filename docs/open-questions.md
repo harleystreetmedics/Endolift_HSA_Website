@@ -52,3 +52,12 @@ The page is new and empty (0 followers, no posts or reviews). Items 1–4 below 
 4. **GMC numbers** for Dr Soltanzadeh, Dr Ku, Dr Khan and Dr Mohammed.
 5. **Legal entity:** is "Harley Street Aesthetics" a trading name of Harley Street Medics Ltd (SC818003)? Also the ICO registration number.
 6. **Addresses:** the HSM privacy policy lists Portpool Lane EC1N and 154 Clyde Street. Are these old addresses?
+- **Second pass (23 Oct):** ICO (ZB819731), finance broker and deposit/cancellation terms are now filled in. Still needed from you:
+  1. **Company number.** SC818003 isn't published anywhere we checked.
+  2. **London CQC.** Which provider at 2 Grosvenor Gardens covers us: Grosvenor Gardens Healthcare (1-18332772562), Broad Smiles Ltd (1-18318363072), or neither?
+  3. **Glasgow opening hours.**
+  4. **GMC numbers** for Dr Nina Ku and Dr Ayda Soltanzadeh. The register search failed on 23 Oct; retry after 24 Oct.
+  5. **FCA.** Does Harley Street Medics Ltd hold FCA permission, or act as an appointed representative, to introduce credit through Ideal4Finance?
+  6. **Complaints procedure**, including the escalation route (e.g. HIS for Glasgow, ISCAS for London).
+  7. **Data-retention periods.**
+  8. **Glasgow deposit.** Does the £50 deposit and 48-hour policy also apply in Glasgow?
