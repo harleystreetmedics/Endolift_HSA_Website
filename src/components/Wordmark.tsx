@@ -7,11 +7,11 @@ export function Wordmark({ tone = "dark", sub }: { tone?: "dark" | "light"; sub?
     <span className="flex flex-col leading-none">
       <span className={`font-serif text-[1.15rem] tracking-[0.18em] uppercase sm:text-xl ${tone === "dark" ? "text-white" : "text-ink"}`}>
         Harley Street
-      </span>
+      </span>{" "}
       <span className="mt-1 flex items-center gap-2 text-[0.6rem] font-semibold tracking-[0.42em] text-gold uppercase">
         <span aria-hidden="true" className="h-px w-4 bg-gold" />
         Aesthetics
-        {sub && <span className="sr-only"> – {sub}</span>}
+        {sub && <span className="sr-only"> {sub}</span>}
       </span>
     </span>
   );

@@ -47,8 +47,8 @@ export function Header() {
         </div>
       </div>
       <div className="container-x flex h-[4.5rem] items-center justify-between gap-4">
-        <a href={BRAND.mainSite} aria-label="Harley Street Aesthetics – main website" className="shrink-0">
-          <Wordmark />
+        <a href={BRAND.mainSite} className="shrink-0">
+          <Wordmark sub="main website" />
         </a>
 
         <nav aria-label="Main" className="hidden xl:block">
@@ -72,12 +72,12 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <LocationSwitcher className="hidden md:inline-flex" />
+          <LocationSwitcher className="max-md:hidden" />
           <a href={clinic.phone.href} className="hidden items-center gap-2 text-sm text-white/85 hover:text-gold 2xl:flex">
             <Icon name="phone" className="h-4 w-4 text-gold" />
             {clinic.phone.display}
           </a>
-          <Link href="/book/" className={buttonClass("gold", "hidden min-h-11! px-5! text-xs! whitespace-nowrap sm:inline-flex")}>
+          <Link href="/book/" className={buttonClass("gold", "min-h-11! px-5! text-xs! whitespace-nowrap max-sm:hidden")}>
             Book consultation
           </Link>
           <button

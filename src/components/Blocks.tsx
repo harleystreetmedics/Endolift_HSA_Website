@@ -123,7 +123,7 @@ export function PractitionerCard({ p }: { p: Practitioner }) {
 export function ClinicCard({ clinic, tone = "light" }: { clinic: Clinic; tone?: "light" | "dark" }) {
   const dark = tone === "dark";
   return (
-    <div className={`flex h-full flex-col rounded-2xl border p-6 sm:p-8 ${dark ? "border-white/10 bg-white/[0.04] text-white" : "border-ink/10 bg-white text-ink shadow-card"}`}>
+    <div className={`flex flex-col rounded-2xl border p-6 sm:p-8 ${dark ? "border-white/10 bg-white/[0.04] text-white" : "border-ink/10 bg-white text-ink shadow-card"}`}>
       <p className={`eyebrow ${dark ? "text-gold" : "text-gold-700"}`}>{clinic.city}</p>
       <h3 className="mt-2 font-serif text-2xl">{clinic.name}</h3>
       <address className={`mt-5 flex-1 space-y-4 text-sm not-italic ${dark ? "text-white/75" : "text-stone"}`}>
@@ -260,7 +260,7 @@ export function PageHero({
       <HeroArt />
       <div className="container-x relative">
         {crumbs && <Breadcrumbs items={crumbs} />}
-        <div className="mt-8 max-w-3xl animate-fade-up">
+        <div className="mt-8 max-w-3xl">
           {eyebrow && <p className="eyebrow text-gold">{eyebrow}</p>}
           <h1 className="mt-4 text-4xl leading-[1.08] sm:text-5xl lg:text-6xl">{title}</h1>
           {intro && <div className="mt-6 text-lg leading-relaxed text-white/75">{intro}</div>}

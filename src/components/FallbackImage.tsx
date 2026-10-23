@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 /** Remote image with an initials/gradient fallback when it fails to load. */
 export function FallbackImage({
@@ -19,6 +19,14 @@ export function FallbackImage({
   height: number;
 }) {
   const [failed, setFailed] = useState(!src);
+  const ref = useRef<HTMLImageElement>(null);
+
+  // The image may have failed before React hydrated, so onError never fired.
+  useEffect(() => {
+    const img = ref.current;
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- sync with the DOM after hydration
+    if (img && img.complete && img.naturalWidth === 0) setFailed(true);
+  }, []);
   if (failed) {
     return (
       <div
@@ -34,6 +42,7 @@ export function FallbackImage({
     // Remote CDN images: next/image optimisation is unavailable in static export.
     // eslint-disable-next-line @next/next/no-img-element
     <img
+      ref={ref}
       src={src}
       alt={alt}
       width={width}

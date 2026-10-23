@@ -11,8 +11,8 @@ export function Footer() {
     <footer className="bg-ink pb-28 text-white/75 lg:pb-0">
       <div className="container-x grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-12">
         <div className="lg:col-span-4">
-          <a href={BRAND.mainSite} aria-label="Harley Street Aesthetics – main website">
-            <Wordmark />
+          <a href={BRAND.mainSite}>
+            <Wordmark sub="main website" />
           </a>
           <p className="mt-5 max-w-sm text-sm leading-relaxed">
             {TREATMENT_NAME}, minimally invasive laser skin tightening by GMC-registered doctors at our London and Glasgow clinics.

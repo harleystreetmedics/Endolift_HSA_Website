@@ -32,7 +32,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden bg-ink text-white" aria-labelledby="hero-title">
         <HeroArt />
         <div className="container-x relative pt-14 pb-16 sm:pt-20 sm:pb-24 lg:pt-28">
-          <div className="max-w-3xl animate-fade-up">
+          <div className="max-w-3xl">
             <p className="eyebrow text-gold">Minimally invasive laser lifting</p>
             <h1 id="hero-title" className="mt-5 text-[2.6rem] leading-[1.05] sm:text-6xl lg:text-7xl">
               {TREATMENT_NAME} <span className="block text-gold italic">in London &amp; Glasgow</span>
