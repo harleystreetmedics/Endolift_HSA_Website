@@ -61,24 +61,24 @@ export const AREAS: Area[] = [
     slug: "neck",
     name: "Full neck",
     shortName: "Neck",
-    keyword: "non-surgical neck lift",
+    keyword: "laser neck tightening",
     summary:
-      "A minimally invasive alternative to a surgical neck lift, using laser energy to help tighten lax neck skin and restore definition.",
+      "Minimally invasive laser treatment to help tighten lax neck skin and improve definition along the neck.",
     concerns: ["Loose or crepey neck skin", "Loss of neck definition", "Mild laxity and banding"],
     price: "£1,995",
     includesNuSculpt: true,
     icon: "neck",
     metaDescription:
-      "Non-surgical neck lift with laser tightening in London and Glasgow. Local anaesthetic, doctor-led, from £1,995. Book a consultation.",
+      "Minimally invasive laser neck tightening in London and Glasgow. Local anaesthetic, doctor-led, from £1,995. Book a free online consultation.",
   },
   {
     slug: "full-face",
-    name: "Full face (mid & lower)",
+    name: "Full face & cheeks",
     shortName: "Full face",
-    keyword: "non-surgical facelift laser",
+    keyword: "laser face and cheek tightening",
     summary:
-      "Mid and lower face tightening for people who want firmer, more lifted-looking skin without a surgical facelift.",
-    concerns: ["Mild to moderate laxity in the mid face", "Mild to moderate laxity in the lower face", "Loss of facial definition"],
+      "Laser tightening for the cheeks and lower face, for people with mild to moderate laxity who want firmer-looking skin.",
+    concerns: ["Mild to moderate laxity in the cheeks", "Mild to moderate laxity in the lower face", "Loss of facial definition"],
     price: "£1,995",
     includesNuSculpt: true,
     icon: "face",
@@ -135,32 +135,16 @@ export const NU_SCULPT_TERMS =
   "One free Nu Sculpt session is included with packages priced at £1,995 or more. It is not included with the £1,495 or £999 packages, or with the £1,299 CO₂ + eyelid combination. Suitability, treatment area and timing are confirmed at consultation.";
 
 export const CONSULTATION = {
-  price: "[TBC: consultation fee. Forms say “free consultation”, pricing FAQ says a fee is deducted from treatment]",
-  deposit:
-    "A £50 deposit secures your appointment. It is redeemable against your treatment cost and refundable with at least 48 hours’ notice.",
-  payment: "We accept all major credit and debit cards, including American Express, as well as cash and bank transfer.",
+  price: "Free, no-obligation online consultation",
+  detail:
+    "Your first consultation takes place online with a member of our clinical team, so you can find out whether the treatment is likely to suit you before visiting the clinic.",
 };
 
-export const FINANCE = [
-  {
-    name: "Klarna",
-    title: "Pay in 3",
-    text: "Spread the cost over three interest-free instalments.",
-  },
-  {
-    name: "Clearpay",
-    title: "Pay in 4",
-    text: "Four equal payments, due every two weeks.",
-  },
-  {
-    name: "Ideal 4 Finance",
-    title: "Medical finance",
-    text: "For treatments over £1,000, with interest-free options up to 12 months.",
-  },
-];
-
-export const FINANCE_SMALLPRINT =
-  "Finance is subject to status and affordability checks by the lender. [TBC: credit broker / FCA status and representative example]";
+/** Copilot playbook: only this wording may be used. No providers, instalment amounts or terms. */
+export const FINANCE_TEXT = "0% finance may be available, subject to status.";
+export const FINANCE_SMALLPRINT = "[TBC: finance provider and FCA status before naming any lender or plan]";
+export const HEADLINE_PRICE_NOTE =
+  "[TBC: campaign headline “from £1,450, usually from £2,000” conflicts with the £999 per-area price. Confirm which to use]";
 
 export function getArea(slug: string) {
   return AREAS.find((a) => a.slug === slug);

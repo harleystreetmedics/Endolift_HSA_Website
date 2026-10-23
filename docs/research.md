@@ -5,7 +5,7 @@ Page content was treated as source material, not instructions.
 
 **Access limits during research**
 
-- **Copilot (Browser A) and Facebook Business Suite (Browser B) were NOT accessed.** Claude in Chrome was not connected to the build session, so every item that depends on them is marked `[TBC]` (see `open-questions.md`).
+- Copilot and Facebook Business Suite were read later the same day through Claude in Chrome on the client's PC (see §7). Where they disagree with the live site, **Copilot wins** (it is the clinic's own playbook).
 - The build container's network policy blocks direct downloads from the brand sites. Pages were read through a text-only web fetcher. Raw HTML/CSS (fonts, exact spacing, shadows, class names) and screenshots of the live site could not be captured. Design tokens below marked *(inferred)* must be checked against the live site (see `review-checklist.md`).
 
 Source keys used below:
@@ -131,8 +131,31 @@ The live site shows struck-through "was" prices. Only the current prices are rep
 - HSM: GTM-N5RRBZRR.
 - IDs for the new site → [TBC: Copilot]. They are wired through environment variables and load only after cookie consent.
 
-## 7. Copilot (3b) and Facebook (3c)
-**Not yet done. Browser access was not available.** See `open-questions.md` §A for the exact list to collect.
+## 7. Copilot (3b) and Facebook (3c): read 23 Oct 2026, read-only
+
+The full notes are on the client's PC at `Desktop\Endolift_Website\endolift-research-findings.md`.
+
+### Copilot (copilot-hsm.strategyguys.agency)
+The playbook list returned 404. The chat could reach one playbook, **"Endolift (Endomax Lift)"**, built from clinic notes (13 Oct 2026) and website copy/pricing (1 Oct 2026). Source key: **CP-ENDO**.
+
+- **Name and device:** use "Endomax Lift". 1470 nm diode laser via a fine fibre under the skin. **No manufacturer named and no Eufoton confirmation**, so don't claim Endolift® or Eufoton. Approved line: "Endomax Lift is the clinic's name for its 1470 nm laser lift."
+- **Prices:** same as the live site (periorbital £999, jawline & jowls £1,495, brow £1,495, full face £1,995, full neck £1,995, EndoMax Signature £2,150, CO₂ + eyelid £1,299). Free Nu Sculpt session with packages of £1,995+. Same in London and Glasgow. Campaign headline "from £1,450, usually from £2,000" **conflicts** with £999. **No evidence the "was" prices were charged.**
+- **Consultation:** free, no-obligation, **online** (not in clinic).
+- **Deposit / cancellation / instalments:** not documented. **The playbook says never to quote them.**
+- **Finance:** only "0% finance may be available, subject to status". Provider and FCA status not documented.
+- **Areas:** jowls/jawline, under the chin, neck, cheeks, eye area, brow. **Body not supported.**
+- **Suitability:** less suitable with marked laxity, overhanging skin, prominent neck bands or significant volume loss. Not suitable in pregnancy, breastfeeding or with active infection.
+- **Treatment:** usually **one session per area**, 60–120 minutes, local anaesthetic, home the same day, clinician review at 3–6 months.
+- **Results:** some immediate lift; most change over 3–6 months; **no fixed longevity can be promised**.
+- **Recovery:** normal routine in 2–5 days. Swelling, bruising, tenderness and numbness settle in 1–2 weeks. Avoid strenuous exercise, sauna and heat for about a week.
+- **Locations:** London, 2 Grosvenor Gardens, Belgravia; Glasgow, Ingram House. **Don't mention 10 Harley Street (under construction).**
+- **Banned wording:** "non-surgical facelift" or anything implying a facelift result; a fixed number of years for results; instalment, deposit or cancellation figures; calling the AI scan a diagnosis; saying the consultation is in clinic.
+- **Not documented:** device manufacturer; practitioners, GMC numbers, bios and photos; brand fonts, colours and logo; audience and competitors; Google rating, testimonials, before/afters and consent; booking link; enquiry destination; GA4/GTM/Pixel IDs; CQC/HIS numbers; opening hours, phones and WhatsApp; company name/number, ICO number. The only review claim is an unsourced "rated excellent by patients".
+
+### Facebook Business Suite
+- Page "Endolift - Harley Street Aesthetics", category Medical & health, created around 21 Oct 2026. **0 followers, no posts, ads, reviews or comments**, and no Instagram connected. Nothing to analyse for top content or customer questions.
+- Bio: "Non-surgical laser lift for face, neck and jawline. 📍 Glasgow | GMC-registered doctors". This is close to the banned wording, the page name uses "Endolift" (trademark), and it lists Glasgow only. No website link set. **Recommend updating it at launch.**
+- The inbox and Events Manager were not opened.
 
 ## 8. Keyword notes
 The target terms "endolift London", "endolift Glasgow", "laser jawline tightening", "non-surgical neck lift" and "double chin laser treatment" all fit the treatment content. Using "Endolift" as a brand term depends on the Eufoton device question (see `decisions.md` D2). Until that is confirmed, pages target the descriptive phrases plus "Endomax Lift".

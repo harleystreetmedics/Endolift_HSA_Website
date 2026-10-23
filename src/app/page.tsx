@@ -83,7 +83,7 @@ export default function HomePage() {
 
       {/* Benefits */}
       <Section tone="dark" labelledBy="benefits-title">
-        <SectionHeading id="benefits-title" tone="dark" eyebrow="Why patients choose it" title="A considered alternative to surgery" align="center" />
+        <SectionHeading id="benefits-title" tone="dark" eyebrow="Why patients choose it" title="A considered, minimally invasive option" align="center" />
         <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {BENEFITS.map((b) => (
             <li key={b.title} className="rounded-2xl border border-white/10 bg-white/[0.03] p-7">
@@ -192,7 +192,7 @@ export default function HomePage() {
               tone="dark"
               eyebrow="Pricing"
               title="Clear pricing, confirmed at consultation"
-              intro="Prices are the same at our London and Glasgow clinics. Flexible payment options, including 0% finance, are available subject to status."
+              intro="Prices are the same at our London and Glasgow clinics, and every treatment starts with a free online consultation. 0% finance may be available, subject to status."
             />
             <ButtonLink href="/pricing/">Full pricing &amp; finance</ButtonLink>
           </div>
@@ -232,9 +232,7 @@ export default function HomePage() {
                 ))}
               </tbody>
             </table>
-            <p className="mt-4 text-xs text-white/60">
-              Consultation: <T>{CONSULTATION.price}</T>
-            </p>
+            <p className="mt-4 text-xs text-white/60">Consultation: {CONSULTATION.price}.</p>
           </div>
         </div>
       </Section>
@@ -270,7 +268,7 @@ export default function HomePage() {
               id="book-title"
               eyebrow="Book a consultation"
               title="Start with a conversation"
-              intro="Tell us a little about yourself and our team will call you to arrange a consultation at your preferred clinic. There's no obligation to go ahead with treatment."
+              intro="Tell us a little about yourself and our team will contact you to arrange your free online consultation. There's no obligation to go ahead with treatment."
             />
             <div className="grid gap-4">
               {CLINIC_LIST.map((c) => (

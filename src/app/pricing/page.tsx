@@ -1,8 +1,7 @@
-import { AREAS, CONSULTATION, FINANCE, FINANCE_SMALLPRINT, NU_SCULPT_TERMS, PACKAGES } from "@/content/areas";
+import { AREAS, CONSULTATION, FINANCE_SMALLPRINT, FINANCE_TEXT, HEADLINE_PRICE_NOTE, NU_SCULPT_TERMS, PACKAGES } from "@/content/areas";
 import { faqsByTag } from "@/content/faqs";
 import { BRAND, TREATMENT_NAME, TREATMENT_NAME_PLAIN } from "@/content/site";
 import { CtaBanner, MedicalDisclaimer, PageHero } from "@/components/Blocks";
-import { ButtonLink } from "@/components/Button";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { Icon } from "@/components/Icon";
 import { JsonLd } from "@/components/JsonLd";
@@ -16,7 +15,7 @@ const crumbs = [{ name: "Pricing", path: "/pricing/" }];
 
 export const metadata = pageMetadata({
   title: `${TREATMENT_NAME_PLAIN} Prices London & Glasgow | From £999`,
-  description: `${TREATMENT_NAME_PLAIN} prices by area: under-eyes from £999, jawline and brow from £1,495, full face or neck from £1,995. 0% finance available, subject to status.`,
+  description: `${TREATMENT_NAME_PLAIN} prices by area: under-eyes from £999, jawline and brow from £1,495, full face or neck from £1,995. 0% finance may be available, subject to status.`,
   path: "/pricing/",
 });
 
@@ -29,7 +28,7 @@ export default function PricingPage() {
         crumbs={crumbs}
         eyebrow="Pricing"
         title={`${TREATMENT_NAME} prices`}
-        intro="Prices are per area and the same at our London and Glasgow clinics. Your doctor will confirm your treatment plan and final price at consultation, with no hidden costs."
+        intro="Prices are per area and the same at our London and Glasgow clinics. Your clinician will confirm your treatment plan and final price after your free online consultation."
       />
 
       <Section tone="ivory" labelledBy="prices">
@@ -95,50 +94,23 @@ export default function PricingPage() {
           </span>
         </p>
 
-        <dl className="mt-10 grid gap-5 md:grid-cols-3">
+        <dl className="mt-10 grid gap-5 md:grid-cols-2">
           <div className="rounded-2xl bg-sand p-6">
             <dt className="font-semibold">Consultation</dt>
             <dd className="mt-2 text-sm text-stone">
-              <T>{CONSULTATION.price}</T>
+              <strong className="text-ink">{CONSULTATION.price}.</strong> {CONSULTATION.detail}
             </dd>
           </div>
           <div className="rounded-2xl bg-sand p-6">
-            <dt className="font-semibold">Deposit</dt>
-            <dd className="mt-2 text-sm text-stone">{CONSULTATION.deposit}</dd>
-          </div>
-          <div className="rounded-2xl bg-sand p-6">
-            <dt className="font-semibold">Ways to pay</dt>
-            <dd className="mt-2 text-sm text-stone">{CONSULTATION.payment}</dd>
+            <dt className="font-semibold">Spreading the cost</dt>
+            <dd className="mt-2 text-sm text-stone">
+              {FINANCE_TEXT} <T>{FINANCE_SMALLPRINT}</T>
+            </dd>
           </div>
         </dl>
-      </Section>
-
-      <Section tone="dark" labelledBy="finance">
-        <SectionHeading
-          id="finance"
-          tone="dark"
-          eyebrow="Flexible payments"
-          title="Spread the cost"
-          intro="If you'd prefer to spread the cost of treatment, we offer a choice of payment plans."
-        />
-        <ul className="grid gap-5 md:grid-cols-3">
-          {FINANCE.map((f) => (
-            <li key={f.name} className="rounded-2xl border border-white/10 bg-white/[0.04] p-7">
-              <p className="eyebrow text-gold">{f.name}</p>
-              <h3 className="mt-3 font-serif text-2xl">{f.title}</h3>
-              <p className="mt-3 text-sm text-white/70">{f.text}</p>
-            </li>
-          ))}
-        </ul>
-        <p className="mt-6 text-xs text-white/60">
-          <T>{FINANCE_SMALLPRINT}</T>
+        <p className="mt-6 text-xs text-stone">
+          <T>{HEADLINE_PRICE_NOTE}</T>
         </p>
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-          <ButtonLink href={BRAND.finance}>Finance options</ButtonLink>
-          <ButtonLink href="/book/" variant="outline-light">
-            Book consultation
-          </ButtonLink>
-        </div>
       </Section>
 
       <Section tone="ivory" labelledBy="price-faq">

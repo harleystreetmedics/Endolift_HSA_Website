@@ -8,15 +8,15 @@ import { TREATMENT_NAME } from "./site";
 
 export const KEY_FACTS = [
   { label: "Treatment time", value: "60–120 minutes", icon: "clock" },
-  { label: "Anaesthetic", value: "Local anaesthetic", icon: "shield" },
+  { label: "Sessions", value: "Usually one per area", icon: "layers" },
   { label: "Typical downtime", value: "2–5 days", icon: "calendar" },
   { label: "Results develop", value: "Over 3–6 months", icon: "sparkle" },
 ] as const;
 
-export const SESSIONS = "[TBC: typical number of sessions]";
+export const SESSIONS = "Usually one session per area";
 export const RESULTS_LONGEVITY =
-  "[TBC: how long results typically last. Live site shows “12–18 months” in one place; clinical confirmation needed]";
-export const DEVICE = "[TBC: laser device name and manufacturer]";
+  "How long results last varies from person to person, depending on factors such as age, skin quality and lifestyle, and the skin continues to age naturally. We can't promise a fixed length of time, but your clinician will discuss what is realistic for you, and reviews your progress at 3–6 months.";
+export const DEVICE = `${TREATMENT_NAME} is the clinic’s name for its 1470 nm laser lift: a diode laser delivered through a very fine fibre placed beneath the skin.`;
 
 export const WHAT_IT_IS = {
   intro: `${TREATMENT_NAME} is a minimally invasive laser treatment for skin laxity and small pockets of stubborn fat on the face and neck. A very fine 1470 nm laser fibre is placed just beneath the skin through a tiny entry point, under local anaesthetic.`,
@@ -59,7 +59,7 @@ export const BENEFITS = [
   },
   {
     title: "Doctor-led",
-    text: "Every treatment is planned and performed by a GMC-registered doctor after a full medical consultation.",
+    text: "Every treatment is planned and performed by a GMC-registered doctor after a medical consultation.",
     icon: "user",
   },
 ] as const;
@@ -67,7 +67,7 @@ export const BENEFITS = [
 export const STEPS = [
   {
     title: "Consultation",
-    text: "A doctor reviews your medical history, assesses your skin and discusses your goals, and tells you honestly whether the treatment is right for you.",
+    text: "A free, no-obligation online consultation. A clinician reviews your medical history and goals and tells you honestly whether the treatment is likely to suit you.",
   },
   {
     title: "Preparation",
@@ -79,7 +79,7 @@ export const STEPS = [
   },
   {
     title: "Recovery & review",
-    text: "You receive personalised aftercare advice. Results develop over the following months, and your clinic team will arrange your follow-up.",
+    text: "You go home the same day with personalised aftercare advice. Results develop over the following months, and your clinician reviews your progress at 3–6 months.",
   },
 ] as const;
 
@@ -94,7 +94,8 @@ export const CANDIDACY = {
     "Severe skin laxity that would be better treated surgically",
     "Active skin infection in the treatment area",
     "Pregnancy or breastfeeding",
-    "[TBC: full list of medical contraindications from clinical team]",
+    "Marked laxity or overhanging skin, prominent neck bands or significant volume loss, which may be better suited to other treatments",
+    "[TBC: clinical sign-off of full contraindications list]",
   ],
 };
 
@@ -144,4 +145,5 @@ export const RECOVERY = [
   },
 ] as const;
 
-export const AFTERCARE = "[TBC: approved aftercare instructions from the clinical team]";
+export const AFTERCARE =
+  "Avoid strenuous exercise, saunas, hot baths and other heat for about a week. Your clinician will give you personalised aftercare advice and review your progress at 3–6 months.";

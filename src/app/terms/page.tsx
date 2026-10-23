@@ -18,10 +18,9 @@ export default function Page() {
         Prices shown are a guide per treatment area and are confirmed at consultation. We may change prices. Any included extras (such as a complimentary Nu
         Sculpt session) are subject to the terms shown next to them and to your suitability.
       </p>
-      <h2>Bookings, deposits and cancellations</h2>
+      <h2>Bookings and cancellations</h2>
       <p>
-        A £50 deposit secures appointments and is redeemable against your treatment. It is refundable with at least 48 hours&rsquo; notice.{" "}
-        <T>[TBC: full booking and cancellation terms]</T>
+        <T>[TBC: booking, deposit and cancellation terms (not documented in the Copilot playbook)]</T>
       </p>
       <h2>Content</h2>
       <p>

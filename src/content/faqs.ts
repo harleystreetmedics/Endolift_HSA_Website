@@ -21,7 +21,7 @@ export const FAQS: Faq[] = [
   },
   {
     q: "Which areas can be treated?",
-    a: "We treat the jawline and jowls, under the chin (submental), the neck, the mid and lower face, the area around the eyes and the brow and forehead. Your doctor will advise which areas suit you at consultation.",
+    a: "We treat the jawline and jowls, under the chin (submental), the neck, the cheeks and lower face, the area around the eyes and the brow. We do not currently offer it for body areas. Your clinician will advise which areas suit you.",
     tags: ["home", "general"],
   },
   {
@@ -36,7 +36,7 @@ export const FAQS: Faq[] = [
   },
   {
     q: "How much downtime is there?",
-    a: "Swelling and bruising usually settle within 2–5 days. Most people resume light activities within the first week, but should avoid heat, saunas and strenuous exercise until advised otherwise.",
+    a: "Most people are back to their normal routine within 2–5 days and go home the same day. Swelling, bruising, tenderness and numbness usually settle within 1–2 weeks. Avoid strenuous exercise, saunas and heat for about a week.",
     tags: ["home", "procedure", "recovery"],
   },
   {
@@ -51,7 +51,7 @@ export const FAQS: Faq[] = [
   },
   {
     q: "How many sessions will I need?",
-    a: `${SESSIONS}. Your doctor will recommend a plan at consultation.`,
+    a: `${SESSIONS}. Your clinician will confirm your plan at consultation and review your progress at 3–6 months.`,
     tags: ["procedure"],
   },
   {
@@ -76,27 +76,22 @@ export const FAQS: Faq[] = [
   },
   {
     q: "Is there a consultation fee?",
-    a: CONSULTATION.price,
-    tags: ["pricing"],
-  },
-  {
-    q: "Do you need a deposit?",
-    a: CONSULTATION.deposit,
+    a: `No. ${CONSULTATION.detail} There is no obligation to go ahead with treatment.`,
     tags: ["pricing"],
   },
   {
     q: "Can I spread the cost?",
-    a: "Yes. We offer Klarna (pay in 3), Clearpay (pay in 4) and medical finance through Ideal 4 Finance for treatments over £1,000. Finance is subject to status.",
+    a: "0% finance may be available, subject to status. Our team can talk you through the options after your consultation.",
     tags: ["pricing"],
   },
   {
-    q: "Is it the same as a surgical facelift?",
+    q: "Is it the same as surgery?",
     a: "No. It is a minimally invasive procedure carried out under local anaesthetic without surgical incisions. It is designed for mild to moderate laxity and will not produce the same results as surgery for more advanced laxity. Your doctor will tell you honestly if a surgical opinion would suit you better.",
     tags: ["general"],
   },
   {
     q: "Where can I have the treatment?",
-    a: "At our London clinic (2 Grosvenor Gardens, SW1W 0DH) and our Glasgow clinic (Ingram House, 227 Ingram Street, G1 1DA).",
+    a: "At our London clinic (2 Grosvenor Gardens, Belgravia, SW1W 0DH) and our Glasgow clinic (Ingram House, 227 Ingram Street, G1 1DA). Your first consultation takes place online.",
     tags: ["general"],
   },
 ];

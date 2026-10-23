@@ -23,7 +23,7 @@ export default function BookPage() {
         crumbs={crumbs}
         eyebrow="Book a consultation"
         title="Let's talk about your goals"
-        intro="Send us your details and our team will call you to arrange a consultation with one of our doctors. There's no obligation to go ahead with treatment."
+        intro="Send us your details and our team will contact you to arrange a free online consultation. There's no obligation to go ahead with treatment."
       />
       <Section tone="sand">
         <div className="grid gap-10 lg:grid-cols-12">

@@ -2,7 +2,9 @@
 
 Answers are needed before launch. Each item maps to `[TBC: …]` markers in the code. Run `npm run check:tbc` to list them.
 
-## A. Needs Copilot (Browser A), not yet accessed
+## A. Not answered by Copilot (playbook read 23 Oct 2026): the clinic must supply these
+
+Resolved by Copilot: treatment name, sessions, results/longevity wording, consultation (free, online), areas (no body), aftercare, suitability. Still open:
 1. **Device:** which laser device and manufacturer do we use? Is it a genuine **Eufoton** device (needed before we can say "Endolift®")?
 2. **Treatment name:** confirm the public name: "Endomax Lift" (live H1/nav) or "Endolift®".
 3. **Number of sessions** usually needed per area.
@@ -23,7 +25,8 @@ Answers are needed before launch. Each item maps to `[TBC: …]` markers in the 
 18. **Finance:** is the clinic FCA authorised or an appointed representative / introducer for Ideal 4 Finance? Approved finance wording and representative example.
 19. **Aftercare, contraindications and side effects:** clinical sign-off of the copy taken from the live page.
 
-## B. Needs Facebook Business Suite (Browser B), not yet accessed
+## B. Facebook Business Suite (read 23 Oct 2026)
+The page is new and empty (0 followers, no posts or reviews). Items 1–4 below have nothing to source yet. Please also fix the page bio and name before advertising (see research §7).
 1. Page info (name, category, links) to match the schema `sameAs`.
 2. Top Endolift/Endomax posts and ads: messaging, offers and imagery style.
 3. Common customer questions in comments (to refine the FAQ).
@@ -36,3 +39,8 @@ Answers are needed before launch. Each item maps to `[TBC: …]` markers in the 
 4. **HSM website:** the homepage text contains an unrelated casino spam block. Please have someone check the WordPress install.
 5. Is the 10 Harley Street address a treatment location for the Endomax Lift, or a correspondence address?
 6. Live site legal pages: Privacy/Terms links are `#` on harleystreetaesthetic.co.uk. Do approved policies exist that we should mirror?
+
+## D. New from the Copilot read
+1. **Headline price:** "from £999" (per-area list) or "from £1,450, usually from £2,000" (campaign)?
+2. **"Was" prices:** is there evidence they were charged? If not, they should come off the main site too.
+3. **Main site:** it still says "Non-Surgical Facelift", shows a £50 deposit, names Klarna/Clearpay/Ideal 4 Finance and lists 10 Harley Street, all of which conflict with the playbook.

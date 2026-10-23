@@ -5,11 +5,11 @@
     "accessibility": 100,
     "best-practices": 100,
     "seo": 100,
-    "agentic-browsing": 100
+    "agentic-browsing": 99
   },
   {
     "page": "/treatment-areas/",
-    "performance": 98,
+    "performance": 96,
     "accessibility": 98,
     "best-practices": 100,
     "seo": 100,
@@ -17,7 +17,7 @@
   },
   {
     "page": "/treatment-areas/neck/",
-    "performance": 96,
+    "performance": 95,
     "accessibility": 100,
     "best-practices": 100,
     "seo": 100,
@@ -25,15 +25,15 @@
   },
   {
     "page": "/how-it-works/",
-    "performance": 97,
+    "performance": 95,
     "accessibility": 100,
     "best-practices": 100,
     "seo": 100,
-    "agentic-browsing": 100
+    "agentic-browsing": 99
   },
   {
     "page": "/pricing/",
-    "performance": 96,
+    "performance": 97,
     "accessibility": 100,
     "best-practices": 100,
     "seo": 100,
@@ -41,7 +41,7 @@
   },
   {
     "page": "/results/",
-    "performance": 97,
+    "performance": 95,
     "accessibility": 100,
     "best-practices": 100,
     "seo": 100,
@@ -49,7 +49,7 @@
   },
   {
     "page": "/faq/",
-    "performance": 96,
+    "performance": 97,
     "accessibility": 100,
     "best-practices": 100,
     "seo": 100,
@@ -57,7 +57,7 @@
   },
   {
     "page": "/about/",
-    "performance": 99,
+    "performance": 96,
     "accessibility": 100,
     "best-practices": 96,
     "seo": 100,
@@ -73,15 +73,15 @@
   },
   {
     "page": "/glasgow/",
-    "performance": 96,
+    "performance": 95,
     "accessibility": 100,
     "best-practices": 100,
     "seo": 100,
-    "agentic-browsing": 100
+    "agentic-browsing": 99
   },
   {
     "page": "/book/",
-    "performance": 96,
+    "performance": 97,
     "accessibility": 100,
     "best-practices": 100,
     "seo": 100,
@@ -89,7 +89,7 @@
   },
   {
     "page": "/privacy-policy/",
-    "performance": 97,
+    "performance": 95,
     "accessibility": 100,
     "best-practices": 100,
     "seo": 100,

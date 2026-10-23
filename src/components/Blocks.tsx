@@ -168,7 +168,7 @@ export function ClinicCard({ clinic, tone = "light" }: { clinic: Clinic; tone?: 
 
 export function CtaBanner({
   title = "Find out if this treatment is right for you",
-  text = "Every treatment starts with a medical consultation. Your doctor will assess your skin, explain the options honestly and answer your questions, with no obligation to proceed.",
+  text = "Every treatment starts with a free, no-obligation online consultation. Our clinical team will explain the options honestly and answer your questions.",
 }: {
   title?: string;
   text?: string;

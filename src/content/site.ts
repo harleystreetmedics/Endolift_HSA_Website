@@ -61,8 +61,8 @@ export const CLINICS: Record<ClinicId, Clinic> = {
     city: "London",
     name: "Harley Street Aesthetics London",
     addresses: [
-      { line1: "2 Grosvenor Gardens", locality: "London", postcode: "SW1W 0DH" },
-      { line1: "10 Harley Street", locality: "London", postcode: "W1G 9PF" },
+      // 10 Harley Street is not listed: the Copilot playbook says it is under construction.
+      { line1: "2 Grosvenor Gardens", line2: "Belgravia", locality: "London", postcode: "SW1W 0DH" },
     ],
     phone: { display: "020 4628 3165", href: "tel:+442046283165", e164: "+442046283165" },
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=2+Grosvenor+Gardens+London+SW1W+0DH",

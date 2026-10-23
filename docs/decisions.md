@@ -20,3 +20,7 @@
 | D16 | No body-area pages yet | Body is not on the treatment page or price list. Only one gallery image hints at it. |
 | D17 | 18+ statement in footer and form | ASA guidance on cosmetic interventions not targeting under-18s. |
 | D18 | Glasgow regulator noted as Healthcare Improvement Scotland, not CQC | CQC covers England only. |
+| D19 | Applied the Copilot playbook (23 Oct): removed "non-surgical facelift / neck lift" wording, the deposit, cancellation and instalment details, named finance providers, and 10 Harley Street. Consultation is now "free, online". Sessions "usually one per area". Results longevity is not promised | Banned or undocumented per the Copilot "Endolift (Endomax Lift)" playbook. |
+| D20 | Neck page now targets "laser neck tightening" and the face page "laser face and cheek tightening", instead of "non-surgical neck lift / facelift" | Banned-wording rule. Keep these terms out of ads as well. |
+| D21 | Kept "Endomax Lift" (no Endolift®) | Copilot confirms no Eufoton device is documented. |
+| D22 | The per-area £999 starting price is shown. The "from £1,450" campaign headline is flagged, not used | The two conflict, and the per-area list is the documented price list. |

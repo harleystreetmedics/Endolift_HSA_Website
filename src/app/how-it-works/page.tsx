@@ -32,12 +32,8 @@ export default function HowItWorksPage() {
             <SectionHeading id="science" eyebrow="The technology" title="Laser energy, beneath the skin" />
             <div className="space-y-4 leading-relaxed text-stone">
               <p>{WHAT_IT_IS.body}</p>
-              <p>
-                Device: <T>{DEVICE}</T>
-              </p>
-              <p>
-                Number of sessions: <T>{SESSIONS}</T>
-              </p>
+              <p>{DEVICE}</p>
+              <p>{SESSIONS}, carried out under local anaesthetic, and you go home the same day.</p>
             </div>
           </div>
           <ol className="space-y-4">
@@ -104,7 +100,7 @@ export default function HowItWorksPage() {
         />
         <RecoveryTimeline />
         <p className="mt-12 rounded-2xl border border-white/10 p-5 text-sm text-white/70">
-          Aftercare: <T>{AFTERCARE}</T>
+          <strong className="text-white">Aftercare:</strong> {AFTERCARE}
         </p>
       </Section>
 
