@@ -31,8 +31,8 @@ for (const [label, [width, height]] of Object.entries(WIDTHS)) {
   const page = await ctx.newPage();
   for (const p of pages) {
     await page.goto(`http://localhost:${PORT}${p}`, { waitUntil: "networkidle" });
-    const name = (p === "/" ? "home" : p.replace(/^\/|\/$/g, "").replace(/\//g, "_")) + `.${label}.png`;
-    await page.screenshot({ path: path.join(DEST, name), fullPage: true });
+    const name = (p === "/" ? "home" : p.replace(/^\/|\/$/g, "").replace(/\//g, "_")) + `.${label}.jpg`;
+    await page.screenshot({ path: path.join(DEST, name), fullPage: true, type: "jpeg", quality: 72 });
     console.log("saved", name);
   }
   await ctx.close();

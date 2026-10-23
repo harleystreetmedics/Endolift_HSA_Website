@@ -72,7 +72,7 @@ The build container could not load the main site's CSS or images, so these were 
 - [ ] Fonts: Playfair Display (headings) + Inter (body). Swap in `src/app/globals.css` if the main site uses different ones.
 - [ ] Palette: gold #D4AF37 (confirmed), plus near-black #0B0B0C, ivory #FAF7F0 and sand #F1EADB (inferred).
 - [ ] Button shape (pill), header (dark, sticky) and footer (dark) against the main site.
-- [ ] Compare `docs/screens/*.png` with the live site side by side.
+- [ ] Compare `docs/screens/*.jpg` with the live site side by side.
 
 ## 5. Functional checks (after deploying to a Netlify preview)
 - [ ] Submit the enquiry form. The email arrives at the right inbox and the thank-you message shows.
