@@ -32,7 +32,10 @@ for (const f of files) {
     if (href.startsWith("/_next/") || href.startsWith("#")) continue;
     if (href.startsWith("tel:")) {
       tels.add(href);
-      if (!/^tel:\+44\d{9,10}$/.test(href)) (broken++, console.log(`✗ bad tel ${href} in ${f}`));
+      if (!/^tel:\+44\d{9,10}$/.test(href)) {
+        broken++;
+        console.log(`✗ bad tel ${href} in ${f}`);
+      }
     } else if (href.startsWith("mailto:")) mails.add(href);
     else if (/^https?:\/\//.test(href)) external.add(href);
     else if (href.startsWith("/") && !exists(href)) {

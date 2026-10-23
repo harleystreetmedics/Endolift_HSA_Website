@@ -1,0 +1,36 @@
+# Netlify configuration: static export of Next.js (no Next runtime/functions needed).
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "22"
+  NEXT_TELEMETRY_DISABLED = "1"
+
+# Redirect the default *.netlify.app host to the custom domain once it's live (uncomment after DNS is set).
+# [[redirects]]
+#   from = "https://YOUR-SITE.netlify.app/*"
+#   to = "https://endolift.harleystreetaesthetic.co.uk/:splat"
+#   status = 301
+#   force = true
+
+# Netlify serves out/404.html automatically for unknown paths.
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/og/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

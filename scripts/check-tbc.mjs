@@ -17,6 +17,7 @@ function walk(dir) {
         .forEach((line, i) => {
           for (const m of line.matchAll(RE)) {
             const key = m[0];
+            if (key === "[TBC: …]" || key.includes("^")) continue; // docs and regex, not placeholders
             if (!found.has(key)) found.set(key, []);
             found.get(key).push(`${p}:${i + 1}`);
           }

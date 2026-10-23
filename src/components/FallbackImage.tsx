@@ -24,7 +24,6 @@ export function FallbackImage({
   // The image may have failed before React hydrated, so onError never fired.
   useEffect(() => {
     const img = ref.current;
-    // eslint-disable-next-line react-hooks/set-state-in-effect -- sync with the DOM after hydration
     if (img && img.complete && img.naturalWidth === 0) setFailed(true);
   }, []);
   if (failed) {
