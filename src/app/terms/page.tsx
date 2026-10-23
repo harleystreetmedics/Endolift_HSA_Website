@@ -1,0 +1,40 @@
+import { BRAND } from "@/content/site";
+import { LegalPage } from "@/components/LegalPage";
+import { T } from "@/components/Tbc";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({ title: "Terms of Use", description: "Terms of use for this Harley Street Aesthetics treatment website.", path: "/terms/" });
+
+export default function Page() {
+  return (
+    <LegalPage title="Terms of use" path="/terms/">
+      <h2>About this website</h2>
+      <p>
+        This website provides general information about a treatment offered by Harley Street Aesthetics. It does not form a contract for treatment. Treatment
+        is only provided after a consultation with a qualified medical practitioner and your informed consent.
+      </p>
+      <h2>Prices and offers</h2>
+      <p>
+        Prices shown are a guide per treatment area and are confirmed at consultation. We may change prices. Any included extras (such as a complimentary Nu
+        Sculpt session) are subject to the terms shown next to them and to your suitability.
+      </p>
+      <h2>Bookings, deposits and cancellations</h2>
+      <p>
+        A £50 deposit secures appointments and is redeemable against your treatment. It is refundable with at least 48 hours&rsquo; notice.{" "}
+        <T>[TBC: full booking and cancellation terms]</T>
+      </p>
+      <h2>Content</h2>
+      <p>
+        We take care to keep information accurate, but it is general in nature and not a substitute for medical advice. All content and branding belong to
+        Harley Street Aesthetics. Third-party trademarks belong to their owners.
+      </p>
+      <h2>Complaints</h2>
+      <p>
+        If you are unhappy with any aspect of our service, please contact <a href={`mailto:${BRAND.email}`}>{BRAND.email}</a>.{" "}
+        <T>[TBC: complaints procedure and escalation route]</T>
+      </p>
+      <h2>Law</h2>
+      <p>These terms are governed by the laws of England and Wales, or Scotland for treatment received at our Glasgow clinic.</p>
+    </LegalPage>
+  );
+}

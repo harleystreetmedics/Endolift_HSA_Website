@@ -1,0 +1,113 @@
+@import "tailwindcss";
+@import "@fontsource-variable/playfair-display/index.css";
+@import "@fontsource-variable/inter/index.css";
+
+/*
+ * Brand tokens. Gold #D4AF37 is confirmed from harleystreetaesthetic.co.uk.
+ * The other values are inferred and need checking against the live site (docs/research.md §1).
+ */
+@theme {
+  --color-gold: #d4af37;
+  --color-gold-600: #b8952b;
+  --color-gold-700: #8a6d1c; /* AA-compliant gold for text on light backgrounds */
+  --color-gold-100: #f6edcf;
+  --color-ink: #0b0b0c;
+  --color-charcoal: #161618;
+  --color-graphite: #26262a;
+  --color-ivory: #faf7f0;
+  --color-sand: #f1eadb;
+  --color-stone: #57534c;
+  --color-mist: #d9d3c7;
+
+  --font-serif: "Playfair Display Variable", "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter Variable", Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --radius-card: 1rem;
+  --shadow-card: 0 1px 2px rgb(11 11 12 / 0.04), 0 12px 32px -12px rgb(11 11 12 / 0.12);
+  --shadow-gold: 0 10px 30px -10px rgb(212 175 55 / 0.55);
+
+  --animate-fade-up: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-ivory text-ink font-sans antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-serif tracking-tight text-balance;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  ::selection {
+    background: var(--color-gold-100);
+    color: var(--color-ink);
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.22em];
+  }
+  .gold-rule {
+    @apply block h-px w-16 bg-gradient-to-r from-gold to-transparent;
+  }
+  .prose-legal h2 {
+    @apply mt-10 mb-3 text-2xl;
+  }
+  .prose-legal h3 {
+    @apply mt-6 mb-2 text-lg font-sans font-semibold;
+  }
+  .prose-legal p,
+  .prose-legal li {
+    @apply text-stone leading-relaxed;
+  }
+  .prose-legal p {
+    @apply mb-4;
+  }
+  .prose-legal ul {
+    @apply mb-4 list-disc space-y-1 pl-6;
+  }
+  .prose-legal a {
+    @apply text-gold-700 underline underline-offset-2;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

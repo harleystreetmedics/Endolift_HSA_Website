@@ -1,0 +1,56 @@
+import { BRAND, CLINIC_LIST, TREATMENT_NAME_PLAIN } from "@/content/site";
+import { ClinicCard, MedicalDisclaimer, PageHero } from "@/components/Blocks";
+import { EnquiryForm } from "@/components/EnquiryForm";
+import { Icon } from "@/components/Icon";
+import { JsonLd } from "@/components/JsonLd";
+import { Section } from "@/components/Section";
+import { allClinicsSchema, breadcrumbSchema } from "@/lib/schema";
+import { pageMetadata } from "@/lib/seo";
+
+const crumbs = [{ name: "Book a consultation", path: "/book/" }];
+
+export const metadata = pageMetadata({
+  title: `Book an ${TREATMENT_NAME_PLAIN} Consultation | London & Glasgow`,
+  description: `Request a ${TREATMENT_NAME_PLAIN} consultation at our London or Glasgow clinic. Call, WhatsApp or send an enquiry and our team will be in touch.`,
+  path: "/book/",
+});
+
+export default function BookPage() {
+  return (
+    <>
+      <JsonLd data={[breadcrumbSchema(crumbs), ...allClinicsSchema()]} />
+      <PageHero
+        crumbs={crumbs}
+        eyebrow="Book a consultation"
+        title="Let's talk about your goals"
+        intro="Send us your details and our team will call you to arrange a consultation with one of our doctors. There's no obligation to go ahead with treatment."
+      />
+      <Section tone="sand">
+        <div className="grid gap-10 lg:grid-cols-12">
+          <div className="lg:col-span-7">
+            <h2 className="sr-only">Enquiry form</h2>
+            <EnquiryForm />
+          </div>
+          <div className="space-y-5 lg:col-span-5">
+            <h2 className="font-serif text-2xl">Prefer to talk?</h2>
+            {CLINIC_LIST.map((c) => (
+              <ClinicCard key={c.id} clinic={c} />
+            ))}
+            <div className="rounded-2xl border border-ink/10 bg-white p-6 text-sm">
+              <a href={`mailto:${BRAND.email}`} className="flex items-center gap-3 hover:text-gold-700">
+                <Icon name="mail" className="h-5 w-5 text-gold-700" /> {BRAND.email}
+              </a>
+              {BRAND.whatsapp.enabled && (
+                <a href={BRAND.whatsapp.href} target="_blank" rel="noopener" className="mt-3 flex items-center gap-3 hover:text-gold-700">
+                  <Icon name="whatsapp" className="h-5 w-5 text-gold-700" /> WhatsApp {BRAND.whatsapp.display}
+                  <span className="sr-only">(opens in a new tab)</span>
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+        <MedicalDisclaimer className="mt-12" />
+      </Section>
+    </>
+  );
+}
