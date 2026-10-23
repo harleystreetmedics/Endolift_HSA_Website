@@ -3,7 +3,8 @@ import { CtaBanner, MedicalDisclaimer, PageHero } from "@/components/Blocks";
 import { Icon } from "@/components/Icon";
 import { JsonLd } from "@/components/JsonLd";
 import { Section, SectionHeading } from "@/components/Section";
-import { T } from "@/components/Tbc";
+import { BeforeAfter } from "@/components/BeforeAfter";
+import { RESULTS, RESULTS_NOTE } from "@/content/results";
 import { breadcrumbSchema } from "@/lib/schema";
 import { pageMetadata } from "@/lib/seo";
 
@@ -16,9 +17,9 @@ export const metadata = pageMetadata({
 });
 
 const PRINCIPLES = [
-  "Only real patients treated at our clinics, with their written consent",
-  "No retouching, filters or changes to lighting between photos",
-  "Each photo labelled with the area treated and time since treatment",
+  "Real patients treated at our clinics",
+  "Shown with the patient's consent",
+  "Labelled with the area treated",
   "Results vary: photos show individual outcomes, not a guarantee",
 ];
 
@@ -42,19 +43,12 @@ export default function ResultsPage() {
             </li>
           ))}
         </ul>
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {Array.from({ length: 3 }).map((_, i) => (
-            <figure key={i} className="overflow-hidden rounded-2xl border border-dashed border-gold/60 bg-white">
-              <div className="grid aspect-[4/3] grid-cols-2 gap-px bg-mist">
-                <div className="flex items-center justify-center bg-sand text-xs tracking-wider text-stone uppercase">Before</div>
-                <div className="flex items-center justify-center bg-sand text-xs tracking-wider text-stone uppercase">After</div>
-              </div>
-              <figcaption className="p-5 text-sm text-stone">
-                <T>[TBC: consented before/after photo: area, sessions, time since treatment, practitioner]</T>
-              </figcaption>
-            </figure>
+        <div className="grid gap-5 sm:grid-cols-2">
+          {RESULTS.map((r) => (
+            <BeforeAfter key={r.before} r={r} />
           ))}
         </div>
+        <p className="mt-6 text-sm text-stone">{RESULTS_NOTE}</p>
         <MedicalDisclaimer className="mt-12" />
       </Section>
       <CtaBanner />

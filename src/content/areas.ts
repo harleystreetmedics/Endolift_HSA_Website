@@ -49,9 +49,9 @@ export const AREAS: Area[] = [
       "A soft neck–chin angle",
       "Mild laxity under the jaw",
     ],
-    price: "[TBC: standalone submental price]",
+    price: "£2,150",
     priceNote:
-      "Our EndoMax Signature package combines submental treatment with 2 ml jawline filler for £2,150 and includes one free Nu Sculpt session.",
+      "The price shown is our EndoMax Signature package: under-chin laser treatment plus 2 ml jawline filler, including one free Nu Sculpt session. Ask about under-chin treatment on its own at your consultation.",
     includesNuSculpt: false,
     icon: "chin",
     metaDescription:
@@ -125,7 +125,7 @@ export const PACKAGES = [
   },
   {
     name: "CO₂ + eyelid combination",
-    description: "CO₂ laser combined with laser treatment around the eyelids. [TBC: package details]",
+    description: "CO₂ laser combined with Endomax Lift for the eyelid area.",
     price: "£1,299",
     includesNuSculpt: false,
   },
@@ -143,9 +143,6 @@ export const CONSULTATION = {
 /** Copilot playbook: only this wording may be used. No providers, instalment amounts or terms. */
 export const FINANCE_TEXT = "0% finance may be available, subject to status.";
 export const FINANCE_SMALLPRINT = "[TBC: finance provider and FCA status before naming any lender or plan]";
-export const HEADLINE_PRICE_NOTE =
-  "[TBC: campaign headline “from £1,450, usually from £2,000” conflicts with the £999 per-area price. Confirm which to use]";
-
 export function getArea(slug: string) {
   return AREAS.find((a) => a.slug === slug);
 }

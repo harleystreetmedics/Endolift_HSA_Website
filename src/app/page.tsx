@@ -13,6 +13,8 @@ import { EnquiryForm } from "@/components/EnquiryForm";
 import { Icon } from "@/components/Icon";
 import { JsonLd } from "@/components/JsonLd";
 import { T } from "@/components/Tbc";
+import { BeforeAfter } from "@/components/BeforeAfter";
+import { RESULTS } from "@/content/results";
 import { allClinicsSchema, faqSchema, procedureSchema } from "@/lib/schema";
 import { pageMetadata } from "@/lib/seo";
 
@@ -149,18 +151,14 @@ export default function HomePage() {
                   Results build as new collagen forms, with most people seeing their final result between three and six months after treatment. Everyone&rsquo;s
                   skin is different, so results vary and are not guaranteed.
                 </p>
-                <p className="mt-4">We only show before-and-after photos of real patients who have given written consent, unedited and with full details.</p>
+                <p className="mt-4">All before-and-after photos are of real patients treated at our clinics.</p>
               </>
             }
           />
-          <div className="rounded-2xl border border-dashed border-gold/60 bg-white p-8 text-center">
-            <Icon name="sparkle" className="mx-auto h-8 w-8 text-gold-700" />
-            <p className="mt-4 font-serif text-2xl text-ink">Before &amp; after gallery</p>
-            <p className="mt-2 text-sm text-stone">
-              <T>[TBC: consented before-and-after photos with treatment details]</T>
-            </p>
-            <Link href="/results/" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gold-700 hover:text-ink">
-              About our results <Icon name="arrow" className="h-4 w-4" />
+          <div>
+            <BeforeAfter r={RESULTS[0]} />
+            <Link href="/results/" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-gold-700 hover:text-ink">
+              See more results <Icon name="arrow" className="h-4 w-4" />
             </Link>
           </div>
         </div>
@@ -172,7 +170,7 @@ export default function HomePage() {
           id="team-title"
           eyebrow="Your doctors"
           title="Doctor-led from consultation to aftercare"
-          intro={<T>{"Treatment is planned and carried out by GMC-registered doctors. [TBC: confirm which practitioners perform this treatment at each clinic]"}</T>}
+          intro="Treatment is planned and carried out by GMC-registered doctors."
         />
         <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {PRACTITIONERS.map((p) => (

@@ -4,33 +4,24 @@ Work through this before launch. Tick items as you go. Run `npm run check:tbc` t
 
 ## 1. Blockers: information still needed (every [TBC] item)
 
-The site shows each of these as an **amber highlighted** `[TBC: …]` on the page. There are 25 unique placeholders, left after checking Copilot, the three brand websites and the public registers (GMC, HIS, CQC, Companies House). See research.md §9 and open-questions.md §E.
+10 placeholders remain. None of these are published on harleystreetaesthetic.co.uk, harleystreetmedics.clinic, harleystreetmedicalwellness.co.uk, the Copilot playbook or the public registers, so they must come from the clinic.
 
 - [ ] `[TBC: booking, deposit and cancellation terms (not documented in the Copilot playbook)]`
-- [ ] `[TBC: campaign headline “from £1,450, usually from £2,000” conflicts with the £999 per-area price. Confirm which to use]`
-- [ ] `[TBC: clinical sign-off of full contraindications list]`
 - [ ] `[TBC: complaints procedure and escalation route]`
-- [ ] `[TBC: confirm FRCSEd]`
-- [ ] `[TBC: confirm HSA social profiles from Facebook Business Suite]`
 - [ ] `[TBC: confirm legal entity, e.g. Harley Street Medics Ltd (SC818003), 211b Main Street, Bellshill ML4 1AJ]`
-- [ ] `[TBC: confirm which practitioners perform this treatment at each clinic]`
-- [ ] `[TBC: consented before-and-after photos with treatment details]`
-- [ ] `[TBC: consented before/after photo: area, sessions, time since treatment, practitioner]`
 - [ ] `[TBC: CQC registration. None found on the CQC register for this brand/address]`
-- [ ] `[TBC: CRM provider]`
-- [ ] `[TBC: enquiry destination from Copilot]`
 - [ ] `[TBC: finance provider and FCA status before naming any lender or plan]`
 - [ ] `[TBC: Glasgow opening hours]`
 - [ ] `[TBC: GMC number]`
 - [ ] `[TBC: ICO number]`
-- [ ] `[TBC: job title. GMC number and specialist registration not yet verified]`
-- [ ] `[TBC: job title. GMC register shows no Specialist Register entry]`
 - [ ] `[TBC: legal review]`
-- [ ] `[TBC: package details]`
-- [ ] `[TBC: qualifications]`
 - [ ] `[TBC: retention periods for enquiries that do and do not become patients]`
-- [ ] `[TBC: review source (e.g. Google), dates and permission to quote]`
-- [ ] `[TBC: standalone submental price]`
+
+Filled from the main website at the clinic's request (23 Oct). Please check:
+- [ ] "Consultant Plastic Surgeon" + FRCSEd (Mr Al-Nakib) and "Consultant Dermatologist" (Dr Soltanzadeh): titles copied from the main site. The GMC register shows Mr Al-Nakib is **not** on the Specialist Register.
+- [ ] Before/after photos (4 pairs) copied from the main site gallery: confirm written patient consent covers this site and advertising.
+- [ ] Enquiries go to hello@harleystreetaesthetic.co.uk (set in Netlify → Forms → Notifications).
+- [ ] Reviews are described as "Verified independent reviews, as published on our main website".
 
 Also not shown as a placeholder, but missing:
 - [ ] Official logo files (SVG/PNG, light and dark). The site uses a text wordmark until supplied (`src/components/Wordmark.tsx`).

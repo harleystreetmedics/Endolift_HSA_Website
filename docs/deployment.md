@@ -21,7 +21,7 @@ The site is a static export (`out/`), so any static host works. Netlify is prefe
 ### 3. Turn on the enquiry form
 1. Netlify → **Forms → Enable form detection**, then trigger a new deploy (Deploys → Trigger deploy → Clear cache and deploy).
 2. Confirm a form named **`enquiry`** appears under Forms.
-3. **Forms → Form notifications → Add notification → Email notification**: event "New form submission", form `enquiry`, email = the enquiry inbox **[TBC]**. For a CRM, use an **Outgoing webhook** to the CRM's endpoint instead, or as well.
+3. **Forms → Form notifications → Add notification → Email notification**: event "New form submission", form `enquiry`, email = **hello@harleystreetaesthetic.co.uk**. For a CRM, use an **Outgoing webhook** to the CRM's endpoint instead, or as well.
 4. Optional: in Forms settings, enable **spam filtering**. reCAPTCHA can be switched on by uncommenting the `data-netlify-recaptcha` line in `src/components/EnquiryForm.tsx`.
 5. Submit a test enquiry on the live preview and confirm the email arrives.
 6. Data protection: Netlify stores submissions. Set a retention routine and record Netlify as a processor in the privacy policy (already drafted).

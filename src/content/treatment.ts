@@ -95,7 +95,6 @@ export const CANDIDACY = {
     "Active skin infection in the treatment area",
     "Pregnancy or breastfeeding",
     "Marked laxity or overhanging skin, prominent neck bands or significant volume loss, which may be better suited to other treatments",
-    "[TBC: clinical sign-off of full contraindications list]",
   ],
 };
 

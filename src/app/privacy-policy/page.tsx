@@ -32,7 +32,7 @@ export default function Page() {
       </ul>
       <h2>Who we share it with</h2>
       <p>
-        Our website host and form processor (Netlify, Inc.), our clinic management/CRM system (<T>[TBC: CRM provider]</T>) and, if you consent, Google and Meta
+        Our website host and form processor (Netlify, Inc.), our email provider and, if you consent, Google and Meta
         for analytics and advertising measurement. Some of these providers may process data outside the UK under appropriate safeguards.
       </p>
       <h2>How long we keep it</h2>

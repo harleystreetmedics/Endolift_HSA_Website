@@ -37,7 +37,7 @@ export const BRAND = {
     enabled: true,
   },
   sameAs: [
-    // [TBC: confirm HSA social profiles from Facebook Business Suite]
+    // No social profiles are published on harleystreetaesthetic.co.uk yet. Add the Facebook page URL when it goes live.
   ] as string[],
 } as const;
 

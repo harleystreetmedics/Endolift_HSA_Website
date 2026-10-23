@@ -18,7 +18,6 @@ export const PRACTITIONERS: Practitioner[] = [
   {
     name: "Dr Nina Ku",
     title: "Dermatologist",
-    qualifications: "[TBC: qualifications]",
     bio: "Dr Ku has trained and worked across the UK, France and Europe. Clinical interests include laser and energy-based treatments, laser lifting and injectables. Dr Ku speaks English, French and Russian.",
     photo: "https://harleystreetaesthetic.co.uk/images/team/dr-nina-ku.webp",
     gmc: "[TBC: GMC number]",
@@ -26,9 +25,10 @@ export const PRACTITIONERS: Practitioner[] = [
   },
   {
     name: "Mr Khalil Al-Nakib",
-    // GMC register shows full registration but no Specialist Register entry, so "Consultant" may not be usable.
-    title: "[TBC: job title. GMC register shows no Specialist Register entry]",
-    qualifications: "MB ChB (University of Mosul, 1971). [TBC: confirm FRCSEd]",
+    // Title and FRCSEd as published on harleystreetaesthetic.co.uk/london/team (used at the clinic's request).
+    // Note: the GMC register shows no Specialist Register entry. See docs/open-questions.md §E.
+    title: "Consultant Plastic Surgeon",
+    qualifications: "MB ChB, FRCSEd",
     bio: "Mr Al-Nakib qualified in medicine in 1971 and has experience in plastic, aesthetic and reconstructive surgery and the use of medical lasers, and holds regular clinics in London and Glasgow.",
     photo: "https://harleystreetmedics.clinic/wp-content/uploads/2024/11/6-1.webp",
     // Verified at https://www.gmc-uk.org/registrants/3632451 on 23 Oct 2026.
@@ -37,8 +37,7 @@ export const PRACTITIONERS: Practitioner[] = [
   },
   {
     name: "Dr Ayda Soltanzadeh",
-    title: "[TBC: job title. GMC number and specialist registration not yet verified]",
-    qualifications: "[TBC: qualifications]",
+    title: "Consultant Dermatologist",
     bio: "Dr Soltanzadeh offers bespoke treatment plans, with a focus on thread lifts, facial contouring and non-surgical facial rejuvenation.",
     photo: "https://images-strategyguys.netlify.app/harleystreemedics-image-source-main/dr.%20ayda.webp",
     gmc: "[TBC: GMC number]",
@@ -85,4 +84,4 @@ export const REVIEWS: Review[] = [
   },
 ];
 
-export const REVIEW_SOURCE_NOTE = "[TBC: review source (e.g. Google), dates and permission to quote]";
+export const REVIEW_SOURCE_NOTE = "Verified independent reviews, as published on our main website.";

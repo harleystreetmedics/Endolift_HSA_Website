@@ -11,7 +11,7 @@ import { trackLead } from "./Analytics";
  * Enquiry form → Netlify Forms (docs/decisions.md D9).
  * The form is registered at build time by public/__forms.html. Field names must match it.
  * TODO(launch): set the notification email / CRM webhook in Netlify → Forms → Notifications
- * ([TBC: enquiry destination from Copilot]).
+ * Destination: hello@harleystreetaesthetic.co.uk (the main site's published enquiry email).
  */
 
 const FORM_NAME = "enquiry";

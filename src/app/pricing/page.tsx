@@ -1,4 +1,4 @@
-import { AREAS, CONSULTATION, FINANCE_SMALLPRINT, FINANCE_TEXT, HEADLINE_PRICE_NOTE, NU_SCULPT_TERMS, PACKAGES } from "@/content/areas";
+import { AREAS, CONSULTATION, FINANCE_SMALLPRINT, FINANCE_TEXT, NU_SCULPT_TERMS, PACKAGES } from "@/content/areas";
 import { faqsByTag } from "@/content/faqs";
 import { BRAND, TREATMENT_NAME, TREATMENT_NAME_PLAIN } from "@/content/site";
 import { CtaBanner, MedicalDisclaimer, PageHero } from "@/components/Blocks";
@@ -108,9 +108,6 @@ export default function PricingPage() {
             </dd>
           </div>
         </dl>
-        <p className="mt-6 text-xs text-stone">
-          <T>{HEADLINE_PRICE_NOTE}</T>
-        </p>
       </Section>
 
       <Section tone="ivory" labelledBy="price-faq">
