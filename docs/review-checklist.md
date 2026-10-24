@@ -4,12 +4,10 @@ Work through this before launch. Tick items as you go. Run `npm run check:tbc` t
 
 ## 1. Blockers: information still needed (every [TBC] item)
 
-7 placeholders remain. None of these are published on harleystreetaesthetic.co.uk, harleystreetmedics.clinic, harleystreetmedicalwellness.co.uk, the Copilot playbook or the public registers, so they must come from the clinic.
+5 placeholders remain. None of these are published on harleystreetaesthetic.co.uk, harleystreetmedics.clinic, harleystreetmedicalwellness.co.uk, the Copilot playbook or the public registers, so they must come from the clinic.
 
 - [ ] `[TBC: company number]`
 - [ ] `[TBC: complaints procedure and escalation route]`
-- [ ] `[TBC: CQC registration. Not registered under our name; confirm which provider at 2 Grosvenor Gardens covers us]`
-- [ ] `[TBC: Glasgow opening hours]`
 - [ ] `[TBC: GMC number]`
 - [ ] `[TBC: legal review]`
 - [ ] `[TBC: retention periods for enquiries that do and do not become patients]`
@@ -20,6 +18,7 @@ Filled from the main website at the clinic's request (23 Oct). Please check:
 - [ ] Finance smallprint names Ideal4Finance (FRN 703401), Klarna and Clearpay. Confirm the clinic's own FCA credit-introducer status before launch.
 - [ ] Terms state the £50 redeemable deposit and the 48-hour refund notice (taken from the London pricing page). Confirm this applies in Glasgow too.
 - [ ] Privacy policy: Harley Street Medics Ltd, ICO ZB819731 (expires 21 Nov 2026, so check renewal).
+- [ ] London hours: the Knowledge Base sheet says Mon–Fri 09:00–18:00 for Aesthetics, while the site uses Tue–Fri 9–7 and Sat 9–6 from harleystreetmedics.clinic. Confirm which is right.
 - [ ] Enquiries go to hello@harleystreetaesthetic.co.uk (set in Netlify → Forms → Notifications).
 - [ ] Reviews are described as "Verified independent reviews, as published on our main website".
 

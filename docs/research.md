@@ -189,3 +189,13 @@ The target terms "endolift London", "endolift Glasgow", "laser jawline tightenin
   - data-retention periods
   - GMC numbers for Dr Ku and Dr Soltanzadeh
 - The HSA footer privacy and terms links are "#" placeholders. HSM has no terms page.
+
+## 11. Clinic Knowledge Base sheet (24 Oct 2026, clinic's request)
+
+Source: "HSC Social Replies – Knowledge Base" Google Sheet, read only.
+- **Glasgow hours:** "Mon–Fri 09:00–18:00" (Harley Street Aesthetics row). The Medics and Wellness rows add "Sat 10:00–16:00". The Aesthetics row also gives London as "Mon–Fri 09:00–18:00", which conflicts with harleystreetmedics.clinic (Tue–Fri 09:00–19:00, Sat 09:00–18:00); the site still uses the latter.
+- **CQC:** approved wording only: "Our London clinic operates from CQC-registered premises, where our doctors hold practising privileges." Never claim CQC for Glasgow. The host provider isn't named.
+- **Deposit:** confirms the £50 / 48-hour rule already in the terms.
+- **Complaints:** handled through the clinic email. No written procedure.
+- **Retention:** only a 90-day rule for the social-reply log, which doesn't cover web enquiries.
+- **Not in the sheet:** company number, GMC numbers, FCA status.

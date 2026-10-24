@@ -68,9 +68,9 @@ export const CLINICS: Record<ClinicId, Clinic> = {
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=2+Grosvenor+Gardens+London+SW1W+0DH",
     // From harleystreetmedics.clinic (same address). Not listed on harleystreetaesthetic.co.uk.
     hours: "Tuesday to Friday 9am–7pm, Saturday 9am–6pm",
-    // CQC register (23 Oct 2026): no entry for Harley Street Medics/Aesthetics. 2 Grosvenor Gardens hosts
-    // Grosvenor Gardens Healthcare (1-18332772562) and Broad Smiles Ltd (1-18318363072). Confirm which, if either, covers us.
-    regulator: "[TBC: CQC registration. Not registered under our name; confirm which provider at 2 Grosvenor Gardens covers us]",
+    // Approved wording from the clinic's "HSC Social Replies – Knowledge Base" sheet (Policies tab, 24 Oct 2026).
+    // The CQC-registered host provider isn't named there. Never claim CQC for Glasgow.
+    regulator: "Our London clinic operates from CQC-registered premises, where our doctors hold practising privileges",
   },
   glasgow: {
     id: "glasgow",
@@ -81,7 +81,8 @@ export const CLINICS: Record<ClinicId, Clinic> = {
     ],
     phone: { display: "0141 488 8985", href: "tel:+441414888985", e164: "+441414888985" },
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Ingram+House+227+Ingram+Street+Glasgow+G1+1DA",
-    hours: "[TBC: Glasgow opening hours]",
+    // From the Knowledge Base sheet, Clinic info tab (Harley Street Aesthetics row, 24 Oct 2026).
+    hours: "Monday to Friday 9am–6pm",
     // HIS register (healthcareimprovementscotland.scot/?p=20061): Harley Street Medics Ltd, independent clinic.
     regulator: "Registered with Healthcare Improvement Scotland as an independent clinic (Harley Street Medics Ltd)",
   },
