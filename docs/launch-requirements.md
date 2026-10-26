@@ -8,7 +8,7 @@
 5. Legal sign-off of the privacy, cookie and terms pages.
 
 ## Doctors and clinical
-6. GMC numbers for Dr Nina Ku and Dr Ayda Soltanzadeh, and which doctors perform Endomax Lift at each clinic.
+6. Which doctors perform Endomax Lift at each clinic, with their GMC numbers. The Copilot lists Dr Ayda Soltanzadeh and Dr M Ahmad for Aesthetics. The website lists Dr Nina Ku and Mr Al-Nakib.
 7. The "Consultant" title: Mr Al-Nakib isn't on the GMC Specialist Register. Keep the title, or change it?
 8. Device: is it the genuine Eufoton Endolift? If yes, we can use the Endolift® name. If not, we stay with "Endomax Lift".
 9. Glasgow's HIS registration says "non-surgical treatments only". Please confirm Endomax Lift is covered.
