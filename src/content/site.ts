@@ -30,6 +30,8 @@ export const BRAND = {
   // TODO(launch): self-host an SVG version of the logo in /public (D12).
   logo: "https://images-strategyguys.netlify.app/harleystreemedics-image-source-main/hsa%20logo.png",
   email: "hello@harleystreetaesthetic.co.uk",
+  // Aesthetic consultation calendar supplied by the clinic (26 Oct).
+  bookingUrl: "https://link.harleystreetaesthetic.co.uk/widget/bookings/aesthetic-consultant-1",
   whatsapp: {
     display: "07700 106236",
     // The live site uses wa.me/07700106236, which is malformed. wa.me needs the international format.

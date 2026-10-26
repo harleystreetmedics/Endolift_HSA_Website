@@ -2,7 +2,7 @@
 
 > **Status: NOT deployed.** Nothing has been published and no DNS has been changed. Wait for approval and the final subdomain before doing any of this.
 
-The site is a static export (`out/`), so any static host works. Netlify is preferred because it matches the other sites and provides form handling.
+The site is a static export (`out/`), so any static host works. Netlify is preferred because it matches the other sites.
 
 ## A. Netlify (preferred)
 
@@ -18,13 +18,8 @@ The site is a static export (`out/`), so any static host works. Netlify is prefe
    - `NEXT_PUBLIC_GTM_ID` / `NEXT_PUBLIC_GA4_ID` / `NEXT_PUBLIC_META_PIXEL_ID`, if confirmed
 4. **Deploy site.** Check the `https://<random-name>.netlify.app` preview.
 
-### 3. Turn on the enquiry form
-1. Netlify → **Forms → Enable form detection**, then trigger a new deploy (Deploys → Trigger deploy → Clear cache and deploy).
-2. Confirm a form named **`enquiry`** appears under Forms.
-3. **Forms → Form notifications → Add notification → Email notification**: event "New form submission", form `enquiry`, email = **hello@harleystreetaesthetic.co.uk**. For a CRM, use an **Outgoing webhook** to the CRM's endpoint instead, or as well.
-4. Optional: in Forms settings, enable **spam filtering**. reCAPTCHA can be switched on by uncommenting the `data-netlify-recaptcha` line in `src/components/EnquiryForm.tsx`.
-5. Submit a test enquiry on the live preview and confirm the email arrives.
-6. Data protection: Netlify stores submissions. Set a retention routine and record Netlify as a processor in the privacy policy (already drafted).
+### 3. Booking calendar
+Bookings go through the clinic's calendar (https://link.harleystreetaesthetic.co.uk/widget/bookings/aesthetic-consultant-1), which is embedded on the home, London, Glasgow and Book pages. Nothing to set up in Netlify. To change the calendar, edit `BRAND.bookingUrl` in `src/content/site.ts`.
 
 ### 4. Add the custom domain
 1. Netlify → **Domain management → Add a domain** → `endolift.harleystreetaesthetic.co.uk` → **Verify** → **Add domain**.
@@ -59,7 +54,6 @@ The site is a static export (`out/`), so any static host works. Netlify is prefe
 3. Deploy, then **Settings → Domains → Add** `endolift.harleystreetaesthetic.co.uk`.
 4. At the registrar add **`CNAME endolift → <the value Vercel shows>`**. This is usually `cname.vercel-dns.com`, or a project-specific `*.vercel-dns-0xx.com` value. Use exactly what the dashboard displays.
 5. SSL is issued automatically once DNS verifies (the domain shows "Valid Configuration").
-6. **Forms:** Netlify Forms won't work on Vercel. Point `EnquiryForm.tsx` at another endpoint (e.g. Formspree, or the CRM's API) and remove `public/__forms.html`.
 
 ## Rollback
 Netlify → Deploys → pick a previous deploy → **Publish deploy**. To take the site offline, remove the CNAME record or the custom domain in Netlify.

@@ -15,7 +15,7 @@ Filled from the main website at the clinic's request (23 Oct). Please check:
 - [ ] Terms state the £50 redeemable deposit and the 48-hour refund notice (taken from the London pricing page). Confirm this applies in Glasgow too.
 - [ ] Privacy policy: Harley Street Medics Ltd, ICO ZB819731 (expires 21 Nov 2026, so check renewal).
 - [ ] London hours: the Knowledge Base sheet says Mon–Fri 09:00–18:00 for Aesthetics, while the site uses Tue–Fri 9–7 and Sat 9–6 from harleystreetmedics.clinic. Confirm which is right.
-- [ ] Enquiries go to hello@harleystreetaesthetic.co.uk (set in Netlify → Forms → Notifications).
+- [ ] Bookings go through the aesthetic consultation calendar (link.harleystreetaesthetic.co.uk).
 - [ ] Reviews are described as "Verified independent reviews, as published on our main website".
 
 Also not shown as a placeholder, but missing:
@@ -60,7 +60,7 @@ The build container could not load the main site's CSS or images, so these were 
 - [ ] Compare `docs/screens/*.jpg` with the live site side by side.
 
 ## 5. Functional checks (after deploying to a Netlify preview)
-- [ ] Submit the enquiry form. The email arrives at the right inbox and the thank-you message shows.
+- [ ] Book a test slot in the embedded calendar on the live site (home, London, Glasgow and Book pages), then cancel it.
 - [ ] Spam: a form with the hidden `company` field filled is rejected (Netlify honeypot).
 - [ ] Cookie banner: before accepting, no requests go to googletagmanager.com or facebook.net (DevTools → Network). After "Accept all", they load. "Cookie settings" in the footer reopens the banner.
 - [ ] Both phone numbers dial correctly on a mobile: London 020 4628 3165, Glasgow 0141 488 8985 (taken from the live site. Copilot has no phone numbers, so please confirm them).

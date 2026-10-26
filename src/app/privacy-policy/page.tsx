@@ -18,7 +18,7 @@ export default function Page() {
       </p>
       <h2>What we collect</h2>
       <ul>
-        <li>Details you give us in the enquiry form: name, phone number, email, preferred clinic, preferred call time, area of interest and your message.</li>
+        <li>Details you give us when you book a consultation in our online booking calendar or contact us, such as your name, phone number, email and the time you choose.</li>
         <li>Records of your consent choices (cookie preferences, marketing preference).</li>
         <li>If you accept analytics or marketing cookies: information about how you use the site (see our <Link href="/cookie-policy/">cookie policy</Link>).</li>
       </ul>
@@ -31,7 +31,7 @@ export default function Page() {
       </ul>
       <h2>Who we share it with</h2>
       <p>
-        Our website host and form processor (Netlify, Inc.), our email provider and, if you consent, Google and Meta
+        Our website host (Netlify, Inc.), our online booking calendar provider, our email provider and, if you consent, Google and Meta
         for analytics and advertising measurement. Some of these providers may process data outside the UK under appropriate safeguards.
       </p>
       <h2>How long we keep it</h2>

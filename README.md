@@ -10,7 +10,7 @@ npm install
 npm run dev          # http://localhost:3000
 ```
 
-Node 20.9+ is required (`.nvmrc` pins 22). In dev, the enquiry form simulates a successful submit.
+Node 20.9+ is required (`.nvmrc` pins 22).
 
 ## Scripts
 

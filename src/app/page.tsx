@@ -9,7 +9,7 @@ import { Section, SectionHeading } from "@/components/Section";
 import { AreaCard, ClinicCard, HeroArt, KeyFacts, MedicalDisclaimer, PractitionerCard } from "@/components/Blocks";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { ReviewsCarousel } from "@/components/ReviewsCarousel";
-import { EnquiryForm } from "@/components/EnquiryForm";
+import { BookingCalendar } from "@/components/BookingCalendar";
 import { Icon } from "@/components/Icon";
 import { JsonLd } from "@/components/JsonLd";
 import { T } from "@/components/Tbc";
@@ -266,7 +266,7 @@ export default function HomePage() {
               id="book-title"
               eyebrow="Book a consultation"
               title="Start with a conversation"
-              intro="Tell us a little about yourself and our team will contact you to arrange your free online consultation. There's no obligation to go ahead with treatment."
+              intro="Choose a time that suits you for your free online consultation. There's no obligation to go ahead with treatment."
             />
             <div className="grid gap-4">
               {CLINIC_LIST.map((c) => (
@@ -275,7 +275,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="lg:col-span-7">
-            <EnquiryForm />
+            <BookingCalendar />
           </div>
         </div>
         <MedicalDisclaimer className="mt-12" />

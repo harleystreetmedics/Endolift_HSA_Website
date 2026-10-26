@@ -4,7 +4,7 @@ import { CLINICS, TREATMENT_NAME, type ClinicId } from "@/content/site";
 import { WHAT_IT_IS } from "@/content/treatment";
 import { AreaCard, ClinicCard, CtaBanner, KeyFacts, MedicalDisclaimer, PageHero } from "./Blocks";
 import { ButtonLink } from "./Button";
-import { EnquiryForm } from "./EnquiryForm";
+import { BookingCalendar } from "./BookingCalendar";
 import { FaqAccordion } from "./FaqAccordion";
 import { ForceLocation } from "./LocationProvider";
 import { Section, SectionHeading } from "./Section";
@@ -63,7 +63,7 @@ export function CityLanding({ id }: { id: ClinicId }) {
             <FaqAccordion faqs={faqsByTag("home").slice(0, 4)} />
           </div>
           <div className="lg:col-span-7">
-            <EnquiryForm />
+            <BookingCalendar />
           </div>
         </div>
         <MedicalDisclaimer className="mt-12" />

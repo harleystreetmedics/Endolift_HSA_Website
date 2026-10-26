@@ -1,6 +1,6 @@
 import { BRAND, CLINIC_LIST, TREATMENT_NAME_PLAIN } from "@/content/site";
 import { ClinicCard, MedicalDisclaimer, PageHero } from "@/components/Blocks";
-import { EnquiryForm } from "@/components/EnquiryForm";
+import { BookingCalendar } from "@/components/BookingCalendar";
 import { Icon } from "@/components/Icon";
 import { JsonLd } from "@/components/JsonLd";
 import { Section } from "@/components/Section";
@@ -11,7 +11,7 @@ const crumbs = [{ name: "Book a consultation", path: "/book/" }];
 
 export const metadata = pageMetadata({
   title: `Book an ${TREATMENT_NAME_PLAIN} Consultation | London & Glasgow`,
-  description: `Request a ${TREATMENT_NAME_PLAIN} consultation at our London or Glasgow clinic. Call, WhatsApp or send an enquiry and our team will be in touch.`,
+  description: `Request a ${TREATMENT_NAME_PLAIN} consultation at our London or Glasgow clinic. Book a free online consultation in our calendar, or call or WhatsApp us.`,
   path: "/book/",
 });
 
@@ -23,13 +23,13 @@ export default function BookPage() {
         crumbs={crumbs}
         eyebrow="Book a consultation"
         title="Let's talk about your goals"
-        intro="Send us your details and our team will contact you to arrange a free online consultation. There's no obligation to go ahead with treatment."
+        intro="Pick a time in our calendar for your free online consultation. There's no obligation to go ahead with treatment."
       />
       <Section tone="sand">
         <div className="grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-7">
-            <h2 className="sr-only">Enquiry form</h2>
-            <EnquiryForm />
+            <h2 className="sr-only">Booking calendar</h2>
+            <BookingCalendar />
           </div>
           <div className="space-y-5 lg:col-span-5">
             <h2 className="font-serif text-2xl">Prefer to talk?</h2>
