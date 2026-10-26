@@ -150,4 +150,4 @@ export const AFTERCARE =
   "Avoid strenuous exercise, saunas, hot baths and other heat for about a week. Your clinician will give you personalised aftercare advice and review your progress at 3–6 months.";
 
 /** Procedure photo used on the main site's Endolift page (hero and "How it works"). */
-export const PROCEDURE_IMAGE = "https://harleystreetmedics.clinic/wp-content/uploads/2025/11/d5b33503-447a-42b5-ac80-dfa340faf548.webp";
+export const PROCEDURE_IMAGE = "/images/procedure.webp"; // Self-hosted copy of the main site photo (supplied by the clinic, 26 Oct).
