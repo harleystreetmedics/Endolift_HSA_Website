@@ -7,10 +7,11 @@ import { TREATMENT_NAME } from "./site";
  */
 
 export const KEY_FACTS = [
+  // Matches the stats bar on harleystreetaesthetic.co.uk/glasgow/treatments/endolift (26 Oct).
   { label: "Treatment time", value: "60–120 minutes", icon: "clock" },
-  { label: "Sessions", value: "Usually one per area", icon: "layers" },
-  { label: "Typical downtime", value: "2–5 days", icon: "calendar" },
-  { label: "Results develop", value: "Over 3–6 months", icon: "sparkle" },
+  { label: "Downtime", value: "2–5 days", icon: "calendar" },
+  { label: "Results last", value: "12–18 months", icon: "sparkle" },
+  { label: "Anaesthetic", value: "Local only", icon: "shield" },
 ] as const;
 
 export const SESSIONS = "Usually one session per area";
@@ -21,13 +22,14 @@ export const DEVICE = `${TREATMENT_NAME} is the clinic’s name for its 1470 nm 
 export const WHAT_IT_IS = {
   intro: `${TREATMENT_NAME} is a minimally invasive laser treatment for skin laxity and small pockets of stubborn fat on the face and neck. A very fine 1470 nm laser fibre is placed just beneath the skin through a tiny entry point, under local anaesthetic.`,
   body: `The laser energy is designed to do two things in one session: break down localised fat and stimulate the skin’s own collagen production. Many patients notice some tightening soon after treatment, and the skin continues to change over the following 3–6 months as new collagen forms. Results vary from person to person, and your doctor will talk you through what is realistic for you at consultation.`,
+  // Same six points as the main site's Endolift page.
   points: [
-    "No general anaesthetic or surgical incisions",
-    "Targets skin laxity and localised fat in the same session",
-    "Tiny entry points rather than surgical scars",
-    "Collagen remodelling continues for several months",
-    "Carried out by GMC-registered doctors",
-    "Used on the face, neck, jawline and under the chin",
+    "No general anaesthetic required",
+    "Fat melting and skin tightening in one session",
+    "Minimal scarring (micro entry points only)",
+    "Results keep improving for up to 6 months",
+    "Performed by GMC-registered doctors",
+    "Suitable for the face, neck, jawline and under the chin",
   ],
 };
 
@@ -146,3 +148,6 @@ export const RECOVERY = [
 
 export const AFTERCARE =
   "Avoid strenuous exercise, saunas, hot baths and other heat for about a week. Your clinician will give you personalised aftercare advice and review your progress at 3–6 months.";
+
+/** Procedure photo used on the main site's Endolift page (hero and "How it works"). */
+export const PROCEDURE_IMAGE = "https://harleystreetmedics.clinic/wp-content/uploads/2025/11/d5b33503-447a-42b5-ac80-dfa340faf548.webp";

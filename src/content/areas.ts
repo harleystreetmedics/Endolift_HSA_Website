@@ -1,7 +1,7 @@
 /**
  * Treatment areas and prices, from the live Endolift page (London and Glasgow prices are identical).
  * Source: https://harleystreetaesthetic.co.uk/london/treatments/endolift (read 23 Oct 2026).
- * The struck-through "was" prices are deliberately not shown (docs/decisions.md D4).
+ * Struck-through "was" prices are shown as on the main site (clinic request, 26 Oct; D39 reverses D4).
  */
 
 export interface Area {
@@ -13,6 +13,7 @@ export interface Area {
   concerns: string[];
   price: string;
   priceNote?: string;
+  wasPrice?: string;
   includesNuSculpt: boolean;
   icon: string;
   metaDescription: string;
@@ -32,6 +33,7 @@ export const AREAS: Area[] = [
       "Mild skin laxity in the lower face",
     ],
     price: "£1,495",
+    wasPrice: "£1,995",
     includesNuSculpt: false,
     icon: "jaw",
     metaDescription:
@@ -66,6 +68,7 @@ export const AREAS: Area[] = [
       "Minimally invasive laser treatment to help tighten lax neck skin and improve definition along the neck.",
     concerns: ["Loose or crepey neck skin", "Loss of neck definition", "Mild laxity and banding"],
     price: "£1,995",
+    wasPrice: "£3,495",
     includesNuSculpt: true,
     icon: "neck",
     metaDescription:
@@ -80,6 +83,7 @@ export const AREAS: Area[] = [
       "Laser tightening for the cheeks and lower face, for people with mild to moderate laxity who want firmer-looking skin.",
     concerns: ["Mild to moderate laxity in the cheeks", "Mild to moderate laxity in the lower face", "Loss of facial definition"],
     price: "£1,995",
+    wasPrice: "£3,495",
     includesNuSculpt: true,
     icon: "face",
     metaDescription:
@@ -94,6 +98,7 @@ export const AREAS: Area[] = [
       "Careful treatment of the delicate skin around the eyes to help reduce the appearance of hooding and under-eye bags.",
     concerns: ["Under-eye bags", "Mild hooding", "Crepey skin around the eyes"],
     price: "£999",
+    wasPrice: "£1,495",
     priceNote: "A CO₂ laser + eyelid combination is also available for £1,299. Ask at consultation.",
     includesNuSculpt: false,
     icon: "eye",
@@ -109,6 +114,7 @@ export const AREAS: Area[] = [
       "Treatment to help lift the brow and tighten the forehead for a fresher-looking upper face.",
     concerns: ["Low or heavy brows", "Forehead skin laxity", "A tired-looking upper face"],
     price: "£1,495",
+    wasPrice: "£1,995",
     includesNuSculpt: false,
     icon: "brow",
     metaDescription:
@@ -129,6 +135,23 @@ export const PACKAGES = [
     price: "£1,299",
     includesNuSculpt: false,
   },
+];
+
+export const NU_SCULPT = {
+  badge: "New · HIFU + RF + EMS",
+  title: "Discover Nu Sculpt",
+  text: "A non-invasive lifting option that combines focused ultrasound, radiofrequency and muscle stimulation, with no fibres or incisions.",
+  prices: [
+    { label: "Per session", was: "£1,599", price: "£999" },
+    { label: "Course of 3", was: "£2,997", price: "£1,999" },
+  ],
+  href: "https://harleystreetaesthetic.co.uk/glasgow/treatments/nu-sculpt",
+};
+
+export const PAYMENT_OPTIONS = [
+  { name: "Klarna", title: "Pay in 3", tag: "0% interest", text: "Split your payment into three interest-free instalments.", action: "Available at checkout" },
+  { name: "Clearpay", title: "Pay in 4", tag: "Always interest free", text: "Four payments, every two weeks.", action: "Available at checkout" },
+  { name: "Ideal4Finance", title: "Medical loans", tag: "Over £1,000", text: "Interest-free finance for up to 12 months on treatments over £1,000, subject to status.", action: "Apply now", href: "https://ideal4finance.com/retail/apply/hsm" },
 ];
 
 export const NU_SCULPT_TERMS =

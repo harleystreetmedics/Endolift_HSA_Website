@@ -2,7 +2,8 @@ import Link from "next/link";
 import type { Area } from "@/content/areas";
 import type { Practitioner } from "@/content/people";
 import type { Clinic } from "@/content/site";
-import { KEY_FACTS, RECOVERY, RISKS } from "@/content/treatment";
+import { CANDIDACY, KEY_FACTS, RECOVERY, RISKS } from "@/content/treatment";
+import { NU_SCULPT, PAYMENT_OPTIONS } from "@/content/areas";
 import { ButtonLink } from "./Button";
 import { FallbackImage } from "./FallbackImage";
 import { Icon } from "./Icon";
@@ -40,7 +41,8 @@ export function AreaCard({ area }: { area: Area }) {
             <T>{area.price}</T>
           ) : (
             <>
-              From <span className="font-serif text-xl text-ink">{area.price}</span>
+              {area.wasPrice && <s className="mr-2 text-stone/70">{area.wasPrice}</s>}
+              <span className="font-serif text-xl text-ink">{area.price}</span>
             </>
           )}
         </span>
@@ -287,5 +289,88 @@ export function HeroArt() {
         </defs>
       </svg>
     </div>
+  );
+}
+
+export function Candidacy() {
+  return (
+    <div className="grid gap-5 md:grid-cols-2">
+      {(
+        [
+          ["It may suit", CANDIDACY.suitable, "check", "text-gold-700"],
+          ["It may not suit", CANDIDACY.unsuitable, "x", "text-stone"],
+        ] as const
+      ).map(([title, items, icon, color]) => (
+        <div key={title} className="rounded-2xl bg-white p-7 shadow-card">
+          <h3 className="font-sans text-base font-semibold">{title}</h3>
+          <ul className="mt-4 space-y-2 text-stone">
+            {items.map((s) => (
+              <li key={s} className="flex gap-3">
+                <Icon name={icon} className={`mt-0.5 h-5 w-5 shrink-0 ${color}`} />
+                {s}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export function NuSculptBanner() {
+  return (
+    <a
+      href={NU_SCULPT.href}
+      target="_blank"
+      rel="noopener"
+      className="group relative block overflow-hidden rounded-3xl bg-ink p-8 text-white sm:p-12"
+    >
+      <div aria-hidden="true" className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-gold/20 blur-3xl" />
+      <div className="relative grid items-center gap-8 lg:grid-cols-12">
+        <div className="lg:col-span-7">
+          <span className="inline-block rounded-full border border-gold/50 px-3 py-1 text-xs font-semibold tracking-wider text-gold uppercase">{NU_SCULPT.badge}</span>
+          <h2 className="mt-5 text-3xl sm:text-4xl">{NU_SCULPT.title}</h2>
+          <p className="mt-4 max-w-xl text-white/75">{NU_SCULPT.text}</p>
+          <span className="mt-6 inline-flex items-center gap-2 font-semibold text-gold">
+            Explore Nu Sculpt <Icon name="arrow" className="h-4 w-4 transition group-hover:translate-x-1" />
+            <span className="sr-only">(opens our main website in a new tab)</span>
+          </span>
+        </div>
+        <dl className="grid grid-cols-2 gap-4 lg:col-span-5">
+          {NU_SCULPT.prices.map((p) => (
+            <div key={p.label} className="rounded-2xl border border-white/10 bg-white/[0.04] p-5">
+              <dt className="text-xs tracking-wider text-white/60 uppercase">{p.label}</dt>
+              <dd className="mt-2">
+                <s className="mr-2 text-sm text-white/50">{p.was}</s>
+                <span className="font-serif text-2xl text-gold">{p.price}</span>
+              </dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </a>
+  );
+}
+
+export function PaymentOptions() {
+  return (
+    <ul className="grid gap-5 md:grid-cols-3">
+      {PAYMENT_OPTIONS.map((o) => (
+        <li key={o.name} className="flex flex-col rounded-2xl border border-ink/10 bg-white p-7 shadow-card">
+          <p className="font-serif text-2xl text-ink">{o.name}</p>
+          <p className="mt-4 text-lg font-semibold text-ink">{o.title}</p>
+          <p className="mt-1 text-xs font-semibold tracking-wider text-gold-700 uppercase">{o.tag}</p>
+          <p className="mt-3 flex-1 text-sm leading-relaxed text-stone">{o.text}</p>
+          {o.href ? (
+            <a href={o.href} target="_blank" rel="noopener" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gold-700 hover:text-ink">
+              {o.action} <Icon name="arrow" className="h-4 w-4" />
+              <span className="sr-only">(opens Ideal4Finance in a new tab)</span>
+            </a>
+          ) : (
+            <p className="mt-6 text-sm font-semibold text-ink">{o.action}</p>
+          )}
+        </li>
+      ))}
+    </ul>
   );
 }
