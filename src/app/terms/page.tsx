@@ -1,6 +1,5 @@
 import { BRAND } from "@/content/site";
 import { LegalPage } from "@/components/LegalPage";
-import { T } from "@/components/Tbc";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({ title: "Terms of Use", description: "Terms of use for this Harley Street Aesthetics treatment website.", path: "/terms/" });
@@ -29,8 +28,7 @@ export default function Page() {
       </p>
       <h2>Complaints</h2>
       <p>
-        If you are unhappy with any aspect of our service, please contact <a href={`mailto:${BRAND.email}`}>{BRAND.email}</a>.{" "}
-        <T>[TBC: complaints procedure and escalation route]</T>
+        If you are unhappy with any aspect of our service, please contact <a href={`mailto:${BRAND.email}`}>{BRAND.email}</a>. We will look into it and reply to you.
       </p>
       <h2>Law</h2>
       <p>These terms are governed by the laws of England and Wales, or Scotland for treatment received at our Glasgow clinic.</p>

@@ -4,12 +4,10 @@ Work through this before launch. Tick items as you go. Run `npm run check:tbc` t
 
 ## 1. Blockers: information still needed (every [TBC] item)
 
-4 placeholders remain. None of these are published on harleystreetaesthetic.co.uk, harleystreetmedics.clinic, harleystreetmedicalwellness.co.uk, the Copilot playbook or the public registers, so they must come from the clinic.
+1 placeholder remains (the legal-review banner). None of these are published on harleystreetaesthetic.co.uk, harleystreetmedics.clinic, harleystreetmedicalwellness.co.uk, the Copilot playbook or the public registers, so they must come from the clinic.
 
-- [ ] `[TBC: company number]`
-- [ ] `[TBC: complaints procedure and escalation route]`
 - [ ] `[TBC: legal review]`
-- [ ] `[TBC: retention periods for enquiries that do and do not become patients]`
+- [ ] Company number (legally required on a company website). Not yet supplied: +44 141 488 8985 is the Glasgow phone number.
 
 Filled from the main website at the clinic's request (23 Oct). Please check:
 - [ ] "Consultant Plastic Surgeon" + FRCSEd (Mr Al-Nakib) and "Consultant Dermatologist" (Dr Soltanzadeh): titles copied from the main site. The GMC register shows Mr Al-Nakib is **not** on the Specialist Register.

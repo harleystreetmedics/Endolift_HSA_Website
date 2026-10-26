@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { BRAND } from "@/content/site";
 import { LegalPage } from "@/components/LegalPage";
-import { T } from "@/components/Tbc";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({ title: "Privacy Policy", description: "How Harley Street Aesthetics collects, uses and protects your personal data.", path: "/privacy-policy/" });
@@ -11,7 +10,7 @@ export default function Page() {
     <LegalPage title="Privacy policy" path="/privacy-policy/">
       <h2>Who we are</h2>
       <p>
-        This website is operated by Harley Street Aesthetics, a trading name of Harley Street Medics Ltd, 211B Main Street, Bellshill, Lanarkshire ML4 1AJ (company number <T>[TBC: company number]</T>), the data controller
+        This website is operated by Harley Street Aesthetics, a trading name of Harley Street Medics Ltd, 211B Main Street, Bellshill, Lanarkshire ML4 1AJ, the data controller
         for personal data collected through it. ICO registration number: ZB819731.
       </p>
       <p>
@@ -37,7 +36,7 @@ export default function Page() {
       </p>
       <h2>How long we keep it</h2>
       <p>
-        <T>[TBC: retention periods for enquiries that do and do not become patients]</T>
+        We keep your enquiry details only for as long as we need them to respond to your enquiry and follow it up. If you become a patient, your clinical records are kept for the periods required for medical records by independent healthcare providers. If you opted in to marketing, we keep your contact details until you unsubscribe. You can ask us to delete your enquiry details at any time by emailing us.
       </p>
       <h2>Your rights</h2>
       <p>
