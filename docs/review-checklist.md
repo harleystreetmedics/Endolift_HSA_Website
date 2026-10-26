@@ -4,9 +4,8 @@ Work through this before launch. Tick items as you go. Run `npm run check:tbc` t
 
 ## 1. Blockers: information still needed (every [TBC] item)
 
-1 placeholder remains (the legal-review banner). None of these are published on harleystreetaesthetic.co.uk, harleystreetmedics.clinic, harleystreetmedicalwellness.co.uk, the Copilot playbook or the public registers, so they must come from the clinic.
+No placeholders remain on the site. None of these are published on harleystreetaesthetic.co.uk, harleystreetmedics.clinic, harleystreetmedicalwellness.co.uk, the Copilot playbook or the public registers, so they must come from the clinic.
 
-- [ ] `[TBC: legal review]`
 - [ ] Company number (legally required on a company website). Not yet supplied: +44 141 488 8985 is the Glasgow phone number.
 
 Filled from the main website at the clinic's request (23 Oct). Please check:
