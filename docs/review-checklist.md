@@ -4,11 +4,10 @@ Work through this before launch. Tick items as you go. Run `npm run check:tbc` t
 
 ## 1. Blockers: information still needed (every [TBC] item)
 
-5 placeholders remain. None of these are published on harleystreetaesthetic.co.uk, harleystreetmedics.clinic, harleystreetmedicalwellness.co.uk, the Copilot playbook or the public registers, so they must come from the clinic.
+4 placeholders remain. None of these are published on harleystreetaesthetic.co.uk, harleystreetmedics.clinic, harleystreetmedicalwellness.co.uk, the Copilot playbook or the public registers, so they must come from the clinic.
 
 - [ ] `[TBC: company number]`
 - [ ] `[TBC: complaints procedure and escalation route]`
-- [ ] `[TBC: GMC number]`
 - [ ] `[TBC: legal review]`
 - [ ] `[TBC: retention periods for enquiries that do and do not become patients]`
 

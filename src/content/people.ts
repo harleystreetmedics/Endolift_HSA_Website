@@ -1,7 +1,7 @@
 /**
  * Practitioners as listed on https://harleystreetaesthetic.co.uk/london/team (read 23 Oct 2026).
  * Which doctors perform this treatment at each clinic is still to be confirmed.
- * GMC numbers were not published, so none are shown here.
+ * GMC numbers are not displayed, matching the main site (clinic decision, 26 Oct). Kept here for reference only.
  */
 
 export interface Practitioner {
@@ -10,7 +10,7 @@ export interface Practitioner {
   qualifications?: string;
   bio: string;
   photo?: string;
-  gmc: string;
+  gmc?: string;
   clinics: string;
 }
 
@@ -20,7 +20,6 @@ export const PRACTITIONERS: Practitioner[] = [
     title: "Dermatologist",
     bio: "Dr Ku has trained and worked across the UK, France and Europe. Clinical interests include laser and energy-based treatments, laser lifting and injectables. Dr Ku speaks English, French and Russian.",
     photo: "https://harleystreetaesthetic.co.uk/images/team/dr-nina-ku.webp",
-    gmc: "[TBC: GMC number]",
     clinics: "London",
   },
   {
@@ -40,7 +39,6 @@ export const PRACTITIONERS: Practitioner[] = [
     title: "Consultant Dermatologist",
     bio: "Dr Soltanzadeh offers bespoke treatment plans, with a focus on thread lifts, facial contouring and non-surgical facial rejuvenation.",
     photo: "https://images-strategyguys.netlify.app/harleystreemedics-image-source-main/dr.%20ayda.webp",
-    gmc: "[TBC: GMC number]",
     clinics: "London & Glasgow",
   },
 ];

@@ -103,13 +103,8 @@ export function PractitionerCard({ p }: { p: Practitioner }) {
           </p>
         )}
         <p className="mt-4 flex-1 text-sm leading-relaxed text-stone">{p.bio}</p>
-        <dl className="mt-5 grid grid-cols-2 gap-3 border-t border-ink/10 pt-4 text-xs">
-          <div>
-            <dt className="text-stone">GMC number</dt>
-            <dd className="mt-0.5 font-semibold text-ink">
-              <T>{p.gmc}</T>
-            </dd>
-          </div>
+        {/* GMC numbers aren't shown, to match the main site (clinic decision, 26 Oct). See D34. */}
+        <dl className="mt-5 border-t border-ink/10 pt-4 text-xs">
           <div>
             <dt className="text-stone">Clinic</dt>
             <dd className="mt-0.5 font-semibold text-ink">
