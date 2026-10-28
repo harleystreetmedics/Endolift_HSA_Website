@@ -37,16 +37,21 @@ export function ReviewsCarousel() {
       >
         {REVIEWS.map((r) => (
           <li key={r.name} className="w-[85%] shrink-0 snap-start sm:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.84rem)]">
-            <figure className="flex h-full flex-col rounded-2xl border border-white/10 bg-white/[0.04] p-7">
-              <span aria-hidden="true" className="mb-2 font-serif text-5xl leading-none text-gold">&ldquo;</span>
-              <blockquote className="flex-1 font-serif text-lg leading-relaxed text-white/90">
+            <figure className="flex h-full flex-col rounded-xl border border-gold/20 bg-card p-7">
+              <div className="flex items-center gap-4">
+                <span aria-hidden="true" className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold/40 font-serif text-lg text-gold">
+                  {r.name.charAt(0)}
+                </span>
+                <figcaption className="text-sm">
+                  <span className="block font-semibold text-white">{r.name}</span>
+                  <span className="text-gold">{r.treatment}</span>
+                </figcaption>
+              </div>
+              <blockquote className="mt-6 flex-1 font-serif text-lg leading-relaxed text-white/90">
                 <p>
                   <T>{r.text}</T>
                 </p>
               </blockquote>
-              <figcaption className="mt-6 text-sm text-white/60">
-                <span className="font-semibold text-white">{r.name}</span> · {r.treatment}
-              </figcaption>
             </figure>
           </li>
         ))}
