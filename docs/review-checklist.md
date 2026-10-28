@@ -21,7 +21,7 @@ Filled from the main website at the clinic's request (23 Oct). Please check:
 Also not shown as a placeholder, but missing:
 - [ ] Official logo files (SVG/PNG, light and dark). The site uses a text wordmark until supplied (`src/components/Wordmark.tsx`).
 - [ ] Practitioner photos: self-host approved photos in `public/images/team/` (currently hot-linked from the main site CDN, with an initials fallback).
-- [ ] Tracking IDs (GA4 / GTM / Meta Pixel) → Netlify env vars. If you use GTM, set up Consent Mode so tags inside GTM respect the marketing choice.
+- [ ] Tracking IDs (GA4 / GTM / Meta Pixel) → `.env.local` before building. If you use GTM, set up Consent Mode so tags inside GTM respect the marketing choice.
 - [ ] Final subdomain (`NEXT_PUBLIC_SITE_URL`).
 
 ## 2a. Regulatory points to resolve first
@@ -59,9 +59,8 @@ The build container could not load the main site's CSS or images, so these were 
 - [ ] Button shape (pill), header (dark, sticky) and footer (dark) against the main site.
 - [ ] Compare `docs/screens/*.jpg` with the live site side by side.
 
-## 5. Functional checks (after deploying to a Netlify preview)
+## 5. Functional checks (after uploading to the droplet)
 - [ ] Book a test slot in the embedded calendar on the live site (home, London, Glasgow and Book pages), then cancel it.
-- [ ] Spam: a form with the hidden `company` field filled is rejected (Netlify honeypot).
 - [ ] Cookie banner: before accepting, no requests go to googletagmanager.com or facebook.net (DevTools → Network). After "Accept all", they load. "Cookie settings" in the footer reopens the banner.
 - [ ] Both phone numbers dial correctly on a mobile: London 020 4628 3165, Glasgow 0141 488 8985 (taken from the live site. Copilot has no phone numbers, so please confirm them).
 - [ ] The WhatsApp button opens the chat. Email links work.

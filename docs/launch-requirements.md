@@ -21,5 +21,5 @@
 
 ## Launch
 14. The final subdomain (e.g. endolift.harleystreetaesthetic.co.uk) and approval to go live.
-15. Access to Netlify (or Vercel), and someone who can add one DNS record.
+15. SSH access to the DigitalOcean droplet, and someone who can add one DNS record.
 16. Optional: Google Tag Manager, GA4 and Meta Pixel IDs, the logo as an SVG file, and the Facebook page URL.

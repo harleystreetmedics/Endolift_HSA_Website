@@ -1,7 +1,7 @@
 # Endomax Lift: Harley Street Aesthetics treatment site
 
 A single-treatment microsite for Harley Street Aesthetics' minimally invasive laser lifting treatment.
-It is built with Next.js (App Router), TypeScript and Tailwind CSS, and exported as static files for Netlify.
+It is built with Next.js (App Router), TypeScript and Tailwind CSS, and exported as static files served by nginx on the DigitalOcean droplet.
 
 ## Run locally
 
@@ -45,4 +45,4 @@ All copy, prices and facts are in `src/content/`:
 - `docs/decisions.md`: decisions log
 - `docs/plan.md`: sitemap, wireframes, components
 - `docs/review-checklist.md`: everything to check before launch
-- `docs/deployment.md`: Netlify (and Vercel) deployment, custom domain and DNS
+- `docs/deployment.md`: DigitalOcean droplet deployment (nginx, DNS, HTTPS)
