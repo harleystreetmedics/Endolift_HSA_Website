@@ -141,7 +141,7 @@ export function CookieConsent() {
             Manage
           </button>
         )}
-        <button type="button" onClick={() => close(true, true)} className="min-h-11 rounded-full bg-gold px-4 text-sm font-semibold text-ink hover:bg-gold-600">
+        <button type="button" onClick={() => close(true, true)} className="min-h-11 rounded-full bg-gold px-4 text-sm font-semibold text-on-gold hover:bg-gold-600">
           Accept all
         </button>
       </div>

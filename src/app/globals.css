@@ -1,29 +1,35 @@
 @import "tailwindcss";
 @import "@fontsource-variable/playfair-display/index.css";
-@import "@fontsource-variable/inter/index.css";
+@import "@fontsource-variable/montserrat/index.css";
 
 /*
- * Brand tokens. Gold #D4AF37 is confirmed from harleystreetaesthetic.co.uk.
- * The other values are inferred and need checking against the live site (docs/research.md §1).
+ * Brand tokens, taken from the main site's stylesheet (harleystreetaesthetic.co.uk, 28 Oct 2026):
+ * a dark theme with gold #D4AF37, Playfair Display headings and Montserrat body text.
  */
 @theme {
   --color-gold: #d4af37;
-  --color-gold-600: #b8952b;
-  --color-gold-700: #7a5f14; /* AA-compliant gold for text on light backgrounds */
-  --color-gold-100: #f6edcf;
-  --color-ink: #0b0b0c;
-  --color-charcoal: #161618;
-  --color-graphite: #26262a;
-  --color-ivory: #faf7f0;
-  --color-sand: #f1eadb;
-  --color-stone: #57534c;
-  --color-mist: #d9d3c7;
+  --color-gold-light: #f4e4c1;
+  --color-gold-600: #aa8c2c;
+  --color-gold-700: #d4af37; /* gold text on the dark theme */
+  --color-gold-100: #1f1a0c; /* dark gold tint for icon chips */
+  --color-on-gold: #050505;
+  --color-ink: #050505;
+  --color-black-rich: #050505;
+  --color-black-soft: #0a0a0a;
+  --color-card: #111111;
+  --color-charcoal: #0a0a0a;
+  --color-graphite: #1a1a1a;
+  --color-cream: #fdfcfb;
+  --color-ivory: #050505;
+  --color-sand: #0a0a0a;
+  --color-stone: #9ca3af;
+  --color-mist: #262626;
 
   --font-serif: "Playfair Display Variable", "Playfair Display", Georgia, "Times New Roman", serif;
-  --font-sans: "Inter Variable", Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-sans: "Montserrat Variable", Montserrat, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 
-  --radius-card: 1rem;
-  --shadow-card: 0 1px 2px rgb(11 11 12 / 0.04), 0 12px 32px -12px rgb(11 11 12 / 0.12);
+  --radius-card: 0.75rem;
+  --shadow-card: 0 0 0 1px rgb(212 175 55 / 0.12), 0 20px 40px -20px rgb(0 0 0 / 0.8);
   --shadow-gold: 0 10px 30px -10px rgb(212 175 55 / 0.55);
 
   --animate-fade-up: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
@@ -46,7 +52,7 @@
     -webkit-text-size-adjust: 100%;
   }
   body {
-    @apply bg-ivory text-ink font-sans antialiased;
+    @apply bg-black-rich text-cream font-sans antialiased;
     font-feature-settings: "ss01", "cv11";
   }
   h1,
@@ -60,8 +66,8 @@
     border-radius: 4px;
   }
   ::selection {
-    background: var(--color-gold-100);
-    color: var(--color-ink);
+    background: var(--color-gold);
+    color: var(--color-on-gold);
   }
   summary::-webkit-details-marker {
     display: none;
@@ -74,6 +80,9 @@
   }
   .eyebrow {
     @apply text-xs font-semibold uppercase tracking-[0.22em];
+  }
+  .gold-gradient {
+    background-image: linear-gradient(90deg, #d4af37 0%, #e5c558 50%, #aa8c2c 100%);
   }
   .gold-rule {
     @apply block h-px w-16 bg-gradient-to-r from-gold to-transparent;

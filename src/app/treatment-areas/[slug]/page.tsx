@@ -41,7 +41,7 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
   ];
   const faqs = faqsByTag("procedure").concat(faqsByTag("safety")).slice(0, 5);
   const related = AREAS.filter((a) => a.slug !== area.slug).slice(0, 3);
-  const minutes = KEY_FACTS[0].value;
+  const minutes = `${KEY_FACTS[0].value} ${KEY_FACTS[0].label}`;
 
   return (
     <>
@@ -83,14 +83,14 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
             <SectionHeading id="concerns" eyebrow="What it can help with" title={`${area.name}: common concerns`} />
             <ul className="space-y-3">
               {area.concerns.map((c) => (
-                <li key={c} className="flex items-start gap-3 rounded-xl border border-ink/10 bg-white p-4">
+                <li key={c} className="flex items-start gap-3 rounded-xl border border-cream/10 bg-card p-4">
                   <Icon name="check" className="mt-0.5 h-5 w-5 text-gold-700" />
                   <span>{c}</span>
                 </li>
               ))}
             </ul>
             {area.priceNote && (
-              <p className="mt-6 rounded-xl bg-sand p-4 text-sm text-stone">
+              <p className="mt-6 rounded-xl bg-black-soft p-4 text-sm text-stone">
                 <T>{area.priceNote}</T>
               </p>
             )}
@@ -119,7 +119,7 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
       <Section tone="sand" labelledBy="suitability">
         <SectionHeading id="suitability" eyebrow="Suitability" title="Is it right for you?" intro={CANDIDACY.intro} />
         <div className="grid gap-5 md:grid-cols-2">
-          <div className="rounded-2xl bg-white p-7">
+          <div className="rounded-2xl bg-card p-7">
             <h3 className="font-sans text-base font-semibold">It may suit</h3>
             <ul className="mt-4 space-y-2 text-stone">
               {CANDIDACY.suitable.map((s) => (
@@ -130,7 +130,7 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
               ))}
             </ul>
           </div>
-          <div className="rounded-2xl bg-white p-7">
+          <div className="rounded-2xl bg-card p-7">
             <h3 className="font-sans text-base font-semibold">It may not suit</h3>
             <ul className="mt-4 space-y-2 text-stone">
               {CANDIDACY.unsuitable.map((s) => (

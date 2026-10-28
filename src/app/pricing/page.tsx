@@ -33,10 +33,10 @@ export default function PricingPage() {
 
       <Section tone="ivory" labelledBy="prices">
         <SectionHeading id="prices" eyebrow="Price list" title="Treatment areas" />
-        <div className="overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-card">
+        <div className="overflow-hidden rounded-2xl border border-cream/10 bg-card shadow-card">
           <table className="w-full text-left">
             <caption className="sr-only">{TREATMENT_NAME_PLAIN} prices by treatment area</caption>
-            <thead className="bg-sand/60 text-xs tracking-wider text-stone uppercase">
+            <thead className="bg-black-soft/60 text-xs tracking-wider text-stone uppercase">
               <tr>
                 <th scope="col" className="px-5 py-4 font-semibold sm:px-7">
                   Area
@@ -49,17 +49,17 @@ export default function PricingPage() {
                 </th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-ink/10">
+            <tbody className="divide-y divide-cream/10">
               {AREAS.map((a) => (
                 <tr key={a.slug}>
                   <th scope="row" className="px-5 py-5 font-normal sm:px-7">
-                    <Link href={`/treatment-areas/${a.slug}/`} className="font-serif text-lg text-ink hover:text-gold-700">
+                    <Link href={`/treatment-areas/${a.slug}/`} className="font-serif text-lg text-cream hover:text-gold-700">
                       {a.name}
                     </Link>
                     <span className="mt-1 block text-sm text-stone md:hidden">{a.includesNuSculpt ? "Includes one free Nu Sculpt session" : ""}</span>
                   </th>
                   <td className="hidden px-5 py-5 text-sm text-stone md:table-cell">{a.includesNuSculpt ? "One free Nu Sculpt session" : "n/a"}</td>
-                  <td className="px-5 py-5 text-right font-serif text-xl text-ink sm:px-7">
+                  <td className="px-5 py-5 text-right font-serif text-xl text-cream sm:px-7">
                     <T>{a.price}</T>
                   </td>
                 </tr>
@@ -71,7 +71,7 @@ export default function PricingPage() {
         <h3 className="mt-14 mb-5 font-serif text-2xl">Packages</h3>
         <ul className="grid gap-5 md:grid-cols-2">
           {PACKAGES.map((p) => (
-            <li key={p.name} className="flex flex-col rounded-2xl border border-ink/10 bg-white p-7">
+            <li key={p.name} className="flex flex-col rounded-2xl border border-cream/10 bg-card p-7">
               <div className="flex items-start justify-between gap-4">
                 <h4 className="font-serif text-2xl">{p.name}</h4>
                 <span className="font-serif text-2xl text-gold-700">{p.price}</span>
@@ -79,7 +79,7 @@ export default function PricingPage() {
               <p className="mt-3 text-stone">
                 <T>{p.description}</T>
               </p>
-              {p.includesNuSculpt && <p className="mt-3 text-sm font-semibold text-ink">Includes one free Nu Sculpt session</p>}
+              {p.includesNuSculpt && <p className="mt-3 text-sm font-semibold text-cream">Includes one free Nu Sculpt session</p>}
             </li>
           ))}
         </ul>
@@ -87,7 +87,7 @@ export default function PricingPage() {
         <p className="mt-8 flex gap-3 rounded-xl border border-gold/40 bg-gold-100/50 p-5 text-sm text-stone">
           <Icon name="gift" className="h-5 w-5 shrink-0 text-gold-700" />
           <span>
-            <strong className="text-ink">Nu Sculpt terms:</strong> {NU_SCULPT_TERMS}{" "}
+            <strong className="text-cream">Nu Sculpt terms:</strong> {NU_SCULPT_TERMS}{" "}
             <a href={`${BRAND.mainSite}/london/treatments/nu-sculpt`} className="text-gold-700 underline underline-offset-2">
               About Nu Sculpt
             </a>
@@ -95,13 +95,13 @@ export default function PricingPage() {
         </p>
 
         <dl className="mt-10 grid gap-5 md:grid-cols-2">
-          <div className="rounded-2xl bg-sand p-6">
+          <div className="rounded-2xl bg-black-soft p-6">
             <dt className="font-semibold">Consultation</dt>
             <dd className="mt-2 text-sm text-stone">
-              <strong className="text-ink">{CONSULTATION.price}.</strong> {CONSULTATION.detail}
+              <strong className="text-cream">{CONSULTATION.price}.</strong> {CONSULTATION.detail}
             </dd>
           </div>
-          <div className="rounded-2xl bg-sand p-6">
+          <div className="rounded-2xl bg-black-soft p-6">
             <dt className="font-semibold">Spreading the cost</dt>
             <dd className="mt-2 text-sm text-stone">
               {FINANCE_TEXT} <T>{FINANCE_SMALLPRINT}</T>

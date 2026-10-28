@@ -2,38 +2,38 @@
   {
     "page": "/",
     "performance": 95,
-    "accessibility": 100,
+    "accessibility": 97,
     "best-practices": 100,
     "seo": 100,
-    "agentic-browsing": 99
+    "agentic-browsing": 100
   },
   {
     "page": "/treatment-areas/",
     "performance": 96,
-    "accessibility": 98,
+    "accessibility": 95,
     "best-practices": 100,
     "seo": 100,
     "agentic-browsing": 100
   },
   {
     "page": "/treatment-areas/neck/",
-    "performance": 95,
-    "accessibility": 100,
+    "performance": 98,
+    "accessibility": 96,
     "best-practices": 100,
     "seo": 100,
     "agentic-browsing": 100
   },
   {
     "page": "/how-it-works/",
-    "performance": 95,
+    "performance": 98,
     "accessibility": 100,
     "best-practices": 100,
     "seo": 100,
-    "agentic-browsing": 99
+    "agentic-browsing": 100
   },
   {
     "page": "/pricing/",
-    "performance": 97,
+    "performance": 99,
     "accessibility": 100,
     "best-practices": 100,
     "seo": 100,
@@ -41,15 +41,15 @@
   },
   {
     "page": "/results/",
-    "performance": 95,
+    "performance": 93,
     "accessibility": 100,
     "best-practices": 100,
     "seo": 100,
-    "agentic-browsing": 100
+    "agentic-browsing": 99
   },
   {
     "page": "/faq/",
-    "performance": 97,
+    "performance": 98,
     "accessibility": 100,
     "best-practices": 100,
     "seo": 100,
@@ -57,7 +57,7 @@
   },
   {
     "page": "/about/",
-    "performance": 96,
+    "performance": 97,
     "accessibility": 100,
     "best-practices": 96,
     "seo": 100,
@@ -66,18 +66,18 @@
   {
     "page": "/london/",
     "performance": 96,
-    "accessibility": 100,
+    "accessibility": 97,
     "best-practices": 100,
     "seo": 100,
     "agentic-browsing": 100
   },
   {
     "page": "/glasgow/",
-    "performance": 95,
-    "accessibility": 100,
+    "performance": 97,
+    "accessibility": 97,
     "best-practices": 100,
     "seo": 100,
-    "agentic-browsing": 99
+    "agentic-browsing": 100
   },
   {
     "page": "/book/",
@@ -89,7 +89,7 @@
   },
   {
     "page": "/privacy-policy/",
-    "performance": 95,
+    "performance": 99,
     "accessibility": 100,
     "best-practices": 100,
     "seo": 100,

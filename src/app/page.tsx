@@ -9,7 +9,6 @@ import {
   AreaCard,
   Candidacy,
   CtaBanner,
-  HeroArt,
   KeyFacts,
   MedicalDisclaimer,
   NuSculptBanner,
@@ -42,38 +41,37 @@ export default function HomePage() {
     <>
       <JsonLd data={[procedureSchema(), ...allClinicsSchema(), faqSchema(homeFaqs)]} />
 
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-ink text-white" aria-labelledby="hero-title">
-        <HeroArt />
-        <div className="container-x relative pt-14 pb-16 sm:pt-20 sm:pb-24 lg:pt-24">
-          <div className="grid items-center gap-12 lg:grid-cols-12">
-            <div className="lg:col-span-7">
-              <p className="eyebrow text-gold">Minimally invasive laser lifting</p>
-              <h1 id="hero-title" className="mt-5 text-[2.6rem] leading-[1.05] sm:text-6xl lg:text-7xl">
-                {TREATMENT_NAME} <span className="block text-gold italic">in London &amp; Glasgow</span>
-              </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/75 sm:text-xl">
-                Minimally invasive skin tightening and fat reduction for the face, jawline and neck, delivered by GMC-registered doctors.
-              </p>
-              <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-                <ButtonLink href="/book/">Book consultation</ButtonLink>
-                <ButtonLink href="/pricing/" variant="outline-light">
-                  View pricing
-                </ButtonLink>
-              </div>
-            </div>
-            <div className="lg:col-span-5">
-              <FallbackImage
-                src={PROCEDURE_IMAGE}
-                alt={`${TREATMENT_NAME_PLAIN} treatment`}
-                fallback={TREATMENT_NAME_PLAIN}
-                width={640}
-                height={720}
-                className="aspect-[8/9] w-full rounded-3xl border border-white/10"
-              />
+      {/* Hero: full-bleed photo with dark overlay, as on the main site */}
+      <section className="relative overflow-hidden bg-black-rich text-white" aria-labelledby="hero-title">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={PROCEDURE_IMAGE} alt="" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover object-[70%_30%] opacity-35" />
+        <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-black-rich via-black-rich/85 to-black-rich/30" />
+        <div className="container-x relative pt-20 pb-14 sm:pt-28 lg:pt-36">
+          <div className="max-w-3xl">
+            <p className="inline-flex items-center gap-2 rounded-full border border-gold/50 px-4 py-1.5 text-[0.7rem] font-semibold tracking-[0.2em] text-gold uppercase">
+              <Icon name="sparkle" className="h-3.5 w-3.5" /> Minimally invasive laser lifting
+            </p>
+            <h1 id="hero-title" className="mt-7 text-[2.7rem] leading-[1.05] sm:text-6xl lg:text-7xl">
+              {TREATMENT_NAME.endsWith(" Lift") ? (
+                <>
+                  {TREATMENT_NAME.slice(0, -5)} <span className="text-gold">Lift</span>
+                </>
+              ) : (
+                <span className="text-gold">{TREATMENT_NAME}</span>
+              )}{" "}
+              in London &amp; Glasgow
+            </h1>
+            <p className="mt-7 max-w-2xl text-lg leading-relaxed font-light text-white/80 sm:text-xl">
+              Minimally invasive skin tightening and fat reduction for the face, jawline and neck, delivered by GMC-registered doctors.
+            </p>
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+              <ButtonLink href="/book/">Book consultation</ButtonLink>
+              <ButtonLink href="/pricing/" variant="outline-light">
+                View pricing
+              </ButtonLink>
             </div>
           </div>
-          <div className="mt-14 sm:mt-16">
+          <div className="mt-20 sm:mt-28">
             <KeyFacts />
           </div>
         </div>
@@ -94,7 +92,7 @@ export default function HomePage() {
                   <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gold-100 text-gold-700">
                     <Icon name="check" className="h-3.5 w-3.5" />
                   </span>
-                  <span className="text-ink">{p}</span>
+                  <span className="text-cream">{p}</span>
                 </li>
               ))}
             </ul>
@@ -142,7 +140,7 @@ export default function HomePage() {
             title="Real patient results"
             intro="Results build as new collagen forms. Everyone's skin is different, so results vary and are not guaranteed."
           />
-          <Link href="/results/" className="mb-10 inline-flex shrink-0 items-center gap-2 text-sm font-semibold text-gold-700 hover:text-ink sm:mb-12">
+          <Link href="/results/" className="mb-10 inline-flex shrink-0 items-center gap-2 text-sm font-semibold text-gold-700 hover:text-cream sm:mb-12">
             See all results <Icon name="arrow" className="h-4 w-4" />
           </Link>
         </div>
@@ -188,7 +186,7 @@ export default function HomePage() {
       </Section>
 
       {/* Nu Sculpt */}
-      <section className="bg-ivory py-16 sm:py-20" aria-label="Nu Sculpt">
+      <section className="bg-black-rich py-16 sm:py-20" aria-label="Nu Sculpt">
         <div className="container-x">
           <NuSculptBanner />
         </div>
@@ -243,7 +241,7 @@ export default function HomePage() {
             />
             <ul className="space-y-3">
               {["Priority booking access", "Direct specialist assessment", "No-obligation discussion"].map((t) => (
-                <li key={t} className="flex items-center gap-3 text-ink">
+                <li key={t} className="flex items-center gap-3 text-cream">
                   <Icon name="check" className="h-5 w-5 text-gold-700" />
                   {t}
                 </li>

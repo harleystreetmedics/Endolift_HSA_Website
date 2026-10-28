@@ -29,7 +29,7 @@ export function StickyMobileCta() {
             <Icon name="whatsapp" className="h-5 w-5 text-gold" />
           </a>
         )}
-        <Link href="/book/" className="flex h-12 flex-[1.6] items-center justify-center rounded-full bg-gold text-sm font-semibold tracking-wide text-ink uppercase">
+        <Link href="/book/" className="flex h-12 flex-[1.6] items-center justify-center gold-gradient text-xs font-semibold tracking-[0.15em] text-on-gold uppercase">
           Book consultation
         </Link>
       </div>

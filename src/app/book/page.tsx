@@ -36,7 +36,7 @@ export default function BookPage() {
             {CLINIC_LIST.map((c) => (
               <ClinicCard key={c.id} clinic={c} />
             ))}
-            <div className="rounded-2xl border border-ink/10 bg-white p-6 text-sm">
+            <div className="rounded-2xl border border-cream/10 bg-card p-6 text-sm">
               <a href={`mailto:${BRAND.email}`} className="flex items-center gap-3 hover:text-gold-700">
                 <Icon name="mail" className="h-5 w-5 text-gold-700" /> {BRAND.email}
               </a>

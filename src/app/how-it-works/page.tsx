@@ -38,7 +38,7 @@ export default function HowItWorksPage() {
           </div>
           <ol className="space-y-4">
             {STEPS.map((s, i) => (
-              <li key={s.title} className="flex gap-5 rounded-2xl border border-ink/10 bg-white p-6">
+              <li key={s.title} className="flex gap-5 rounded-2xl border border-cream/10 bg-card p-6">
                 <span className="font-serif text-3xl text-gold-700">0{i + 1}</span>
                 <div>
                   <h3 className="font-serif text-xl">{s.title}</h3>
@@ -53,7 +53,7 @@ export default function HowItWorksPage() {
       <Section tone="sand" labelledBy="candidate">
         <SectionHeading id="candidate" eyebrow="Suitability" title="Are you a good candidate?" intro={CANDIDACY.intro} />
         <div className="grid gap-5 md:grid-cols-2">
-          <div className="rounded-2xl bg-white p-7">
+          <div className="rounded-2xl bg-card p-7">
             <h3 className="font-sans text-base font-semibold">It may suit</h3>
             <ul className="mt-4 space-y-2 text-stone">
               {CANDIDACY.suitable.map((s) => (
@@ -64,7 +64,7 @@ export default function HowItWorksPage() {
               ))}
             </ul>
           </div>
-          <div className="rounded-2xl bg-white p-7">
+          <div className="rounded-2xl bg-card p-7">
             <h3 className="font-sans text-base font-semibold">It may not suit</h3>
             <ul className="mt-4 space-y-2 text-stone">
               {CANDIDACY.unsuitable.map((s) => (

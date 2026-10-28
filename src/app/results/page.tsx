@@ -37,15 +37,15 @@ export default function ResultsPage() {
         <SectionHeading id="gallery" eyebrow="Before & after" title="Real patients, honestly presented" />
         <ul className="mb-12 grid gap-4 sm:grid-cols-2">
           {PRINCIPLES.map((p) => (
-            <li key={p} className="flex gap-3 rounded-xl border border-ink/10 bg-white p-5">
+            <li key={p} className="flex gap-3 rounded-xl border border-cream/10 bg-card p-5">
               <Icon name="check" className="h-5 w-5 shrink-0 text-gold-700" />
               {p}
             </li>
           ))}
         </ul>
         <div className="grid gap-5 sm:grid-cols-2">
-          {RESULTS.map((r) => (
-            <BeforeAfter key={r.before} r={r} />
+          {RESULTS.map((r, i) => (
+            <BeforeAfter key={r.before} r={r} eager={i < 2} />
           ))}
         </div>
         <p className="mt-6 text-sm text-stone">{RESULTS_NOTE}</p>

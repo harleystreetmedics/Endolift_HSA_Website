@@ -10,7 +10,7 @@ No placeholders remain on the site. None of these are published on harleystreeta
 
 Filled from the main website at the clinic's request (23 Oct). Please check:
 - [ ] "Consultant Plastic Surgeon" + FRCSEd (Mr Al-Nakib) and "Consultant Dermatologist" (Dr Soltanzadeh): titles copied from the main site. The GMC register shows Mr Al-Nakib is **not** on the Specialist Register.
-- [ ] Before/after photos (4 pairs) copied from the main site gallery: confirm written patient consent covers this site and advertising.
+- [ ] Before/after photos (4 pairs, now self-hosted): confirm written patient consent covers this site and advertising. **Every photo has a small sparkle mark in the bottom-right corner that looks like Google Gemini's AI-image watermark.** If any were edited or generated with AI, they can't be presented as real results (ASA/CAP 12.1 and the ASA guidance on filters and retouching). Replace them with the unedited originals.
 - [ ] Finance smallprint names Ideal4Finance (FRN 703401), Klarna and Clearpay. Confirm the clinic's own FCA credit-introducer status before launch.
 - [ ] Terms state the £50 redeemable deposit and the 48-hour refund notice (taken from the London pricing page). Confirm this applies in Glasgow too.
 - [ ] Privacy policy: Harley Street Medics Ltd, ICO ZB819731 (expires 21 Nov 2026, so check renewal).

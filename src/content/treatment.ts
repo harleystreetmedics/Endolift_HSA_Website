@@ -8,10 +8,10 @@ import { TREATMENT_NAME } from "./site";
 
 export const KEY_FACTS = [
   // Matches the stats bar on harleystreetaesthetic.co.uk/glasgow/treatments/endolift (26 Oct).
-  { label: "Treatment time", value: "60–120 minutes", icon: "clock" },
-  { label: "Downtime", value: "2–5 days", icon: "calendar" },
-  { label: "Results last", value: "12–18 months", icon: "sparkle" },
-  { label: "Anaesthetic", value: "Local only", icon: "shield" },
+  { value: "60–120", label: "Minutes", icon: "clock" },
+  { value: "2–5", label: "Days downtime", icon: "calendar" },
+  { value: "12–18", label: "Months results", icon: "sparkle" },
+  { value: "Local", label: "Anaesthetic", icon: "shield" },
 ] as const;
 
 export const SESSIONS = "Usually one session per area";
