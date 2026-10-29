@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { BRAND, SITE_URL, TREATMENT_NAME_PLAIN } from "@/content/site";
+import { BRAND, IS_PRODUCTION_HOST, SITE_URL, TREATMENT_NAME_PLAIN } from "@/content/site";
 
 export const absoluteUrl = (path = "/") => `${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`;
 
@@ -32,6 +32,8 @@ export function pageMetadata({ title, description, path, image = "/og/og-default
       description,
       images: [absoluteUrl(image)],
     },
-    robots: noindex ? { index: false, follow: true } : undefined,
+    // Preview hosts are hidden from search engines entirely (D43); an explicit undefined here
+    // would override the noindex the root layout sets, so keep the three cases in one expression.
+    robots: !IS_PRODUCTION_HOST ? { index: false, follow: false } : noindex ? { index: false, follow: true } : undefined,
   };
 }

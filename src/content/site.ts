@@ -21,6 +21,12 @@ export const SITE_URL = (
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://endolift.harleystreetaesthetic.co.uk"
 ).replace(/\/$/, "");
 
+/**
+ * True only on the clinic's own domain. On a preview host (e.g. *.hostingersite.com) the site is
+ * kept out of search results so it can't compete with the main site (D43).
+ */
+export const IS_PRODUCTION_HOST = /(^|\.)harleystreetaesthetic\.co\.uk$/.test(new URL(SITE_URL).hostname);
+
 export const BRAND = {
   name: "Harley Street Aesthetics",
   mainSite: "https://harleystreetaesthetic.co.uk",

@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import { BRAND, SITE_URL, TREATMENT_NAME_PLAIN } from "@/content/site";
+import { BRAND, IS_PRODUCTION_HOST, SITE_URL, TREATMENT_NAME_PLAIN } from "@/content/site";
 import { LocationProvider } from "@/components/LocationProvider";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -20,6 +20,8 @@ export const metadata: Metadata = {
   applicationName: `${TREATMENT_NAME_PLAIN} by ${BRAND.name}`,
   formatDetection: { telephone: false },
   icons: { icon: "/icon.svg" },
+  // Preview hosts are kept out of search results until the real subdomain is live.
+  ...(IS_PRODUCTION_HOST ? {} : { robots: { index: false, follow: false } }),
 };
 
 export const viewport: Viewport = {
