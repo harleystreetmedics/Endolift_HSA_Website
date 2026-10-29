@@ -4,7 +4,7 @@
   "description": "Endomax Lift treatment microsite for Harley Street Aesthetics",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --webpack",
     "start": "npx serve out",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
